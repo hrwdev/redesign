@@ -1,6 +1,11 @@
 // Initialize a global for Twig template variables.
 vars = {};
 
+// Determine if the root directory is a subdirectory.
+const subdir = (window.location.pathname.startsWith('/redesign'))
+  ? '/redesign'
+  : '';
+
 // Load all twig components and their assets, then fire the
 // custom "componentsLoaded" event.
 Promise.all([

@@ -14,8 +14,8 @@ function loadComponent(name) {
     // Register the twig template.
     Twig.twig({
       id: name,
-      namespaces: {components: '/components'},
-      href: `/components/${name}/${name}.twig`,
+      namespaces: {components: `${subdir}/components`},
+      href: `${subdir}/components/${name}/${name}.twig`,
       async: false
     });
   };
@@ -24,7 +24,7 @@ function loadComponent(name) {
     return new Promise(resolve => {
       let asset = document.createElement('link');
       asset.setAttribute('rel', 'stylesheet');
-      asset.setAttribute('href', `/components/${name}/${name}.css`);
+      asset.setAttribute('href', `${subdir}/components/${name}/${name}.css`);
       asset.onload = resolve;
       asset.onerror = resolve;
       document.head.appendChild(asset);
@@ -35,7 +35,7 @@ function loadComponent(name) {
   const loadJs = (name) => {
     return new Promise(resolve => {
       let asset = document.createElement('script')
-      asset.setAttribute('src', `/components/${name}/${name}.js`);
+      asset.setAttribute('src', `${subdir}/components/${name}/${name}.js`);
       asset.onload = resolve;
       asset.onerror = resolve;
       document.head.appendChild(asset);
@@ -45,7 +45,7 @@ function loadComponent(name) {
   const loadVars = (name) => {
     return new Promise(resolve => {
       let asset = document.createElement('script')
-      asset.setAttribute('src', `/components/${name}/${name}.vars.js`);
+      asset.setAttribute('src', `${subdir}/components/${name}/${name}.vars.js`);
       asset.onload = resolve;
       asset.onerror = resolve;
       document.head.appendChild(asset);

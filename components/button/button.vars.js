@@ -5,6 +5,6 @@ vars.button = {
     onclick: '',
     label: 'Close',
     show_label: false,
-    src: '/icons/x.svg',
+    src: `${subdir}/icons/x.svg`,
   },
 };

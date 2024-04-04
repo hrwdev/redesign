@@ -20,12 +20,12 @@
   width: 1.125em;
   height: 1.125em;
   margin-inline-start: 32px;
-  background: url("/icons/+.svg");
+  background: url("../../icons/+.svg");
   background-size: cover;
 }
 
 .modal-disclosure[open] summary::after {
-  background-image: url("/icons/-.svg");
+  background-image: url("../../icons/-.svg");
 }
 
 @media (max-width: 768px) {
