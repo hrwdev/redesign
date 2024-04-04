@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Homepage Redesign</title>
+  <link rel="shortcut icon" href="data:,"/>
+  <link rel="stylesheet" href="/css/reset.css"/>
+  <link rel='stylesheet' href='/css/main.css' />
+  <link rel="stylesheet" href="/fonts/fonts-edited.css"/>
+</head>
+<body>
+<main>
+
+</main>
+<script src="/js/twig.min.js"></script>
+<script src="/js/functions.js"></script>
+<script src="/js/main.js"></script>
+
+<script>
+  document.addEventListener('componentsLoaded', () => {
+    appendToMain(renderTwig('hero', 'default', {
+      video_widget: renderTwig('modal_disclosure')
+    }));
+    appendToMain(renderTwig('hero', 'breaking', {
+      video_widget: ''
+    }));
+
+    // Fire a custom 'twigRendered' event, so that component JS
+    // can run after the components are built.
+    const event = new Event('twigRendered');
+    document.dispatchEvent(event);
+  });
+
+</script>
+</body>
+</html>

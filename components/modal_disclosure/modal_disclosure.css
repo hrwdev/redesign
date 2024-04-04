@@ -1,0 +1,40 @@
+.modal-disclosure {
+  border: 1px solid var(--near-white);
+}
+.modal-disclosure summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 12px;
+  padding-inline: 12px;
+  font-weight: bold;
+  line-height: 1.15;
+  list-style: none;
+  cursor: pointer;
+}
+
+.modal-disclosure summary::after {
+  display: block;
+  content: '';
+  flex: 0 0 auto;
+  width: 1.125em;
+  height: 1.125em;
+  margin-inline-start: 32px;
+  background: url("/icons/+.svg");
+  background-size: cover;
+}
+
+.modal-disclosure[open] summary::after {
+  background-image: url("/icons/-.svg");
+}
+
+@media (max-width: 768px) {
+  .modal-disclosure .modal {
+    display: block;
+    position: relative;
+    border: 0;
+  }
+  .modal-disclosure .modal-header {
+    display: none;
+  }
+}

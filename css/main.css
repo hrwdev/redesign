@@ -1,0 +1,44 @@
+:root {
+  --font-sans: "FF Meta W07", Helvetica Neue, Helvetica, Arial, sans-serif;
+  --font-serif: "Freight Text W01", Georgia, Cambria, "Times New Roman", Times, serif;
+
+  --gap: 15px;
+
+  --blue: #0071ce;
+  --orange: #f6691c;
+  --black: #000000;
+  --near-black: #202020;
+  --white: #ffffff;
+  --near-white: #e5e5e5;
+  --navy: #001f35;
+  --red: #f00000;
+  --dark-blue: #00457c;
+  --dark-orange: #f85619;
+
+  --f1: 3rem;
+  --f2: 2.5rem;
+  --f3: 2.333rem;
+  --f4: 1.666rem;
+  --f5: 1.5rem;
+  --f6: 1.333rem;
+  --f7: 1.125rem;
+  --f8: 1rem;
+  --f9: 0.875rem;
+  --f10: 0.75rem;
+}
+
+html {
+  font-family: var(--font-sans), sans-serif;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}

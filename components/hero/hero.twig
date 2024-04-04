@@ -1,0 +1,36 @@
+<div class="hero {% if is_breaking %}hero-breaking{% endif %}">
+  <div class='hero-image'>
+    <a href="#">{{ image }}</a>
+  </div>
+  <div class='hero-card'>
+    {% if eyebrow %}
+      <div class='hero-card--eyebrow'><span class="inner">{{ eyebrow }}</span></div>
+    {% endif %}
+    <div class='hero-card--date'>{{ date }}</div>
+    <h2 class='hero-card--headline'>
+      <a href="#">
+        {{ headline }}
+      </a>
+    </h2>
+    <div class='hero-card--body'>
+      {{ body }}
+    </div>
+    {% if package %}
+      <div class='hero-card--package'><span class="inner">{{ package }}</span></div>
+    {% endif %}
+    {% if links %}
+      <ul class="hero-card--links">
+      {% for link in links %}
+        <li>{% include '@components/link_emphasis/link_emphasis.twig' with link %}</li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+  </div>
+  <div class='hero-video-trigger'>
+    {% block video_widget %}
+    {% include '@components/modal_disclosure/modal_disclosure.twig'
+      with vars.modal_disclosure
+    %}
+    {% endblock %}
+  </div>
+</div>

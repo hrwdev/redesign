@@ -1,0 +1,6 @@
+<details id="{{ id }}" class="modal-disclosure">
+  <summary id="button-{{ id }}">{{ title }}</summary>
+  {% block modal %}
+    {% include '@components/modal/modal.twig' %}
+  {% endblock %}
+</details>

@@ -1,0 +1,11 @@
+.link-button {
+  display: inline-flex;
+  align-items: center;
+  padding-block: 0.333em;
+  padding-inline: 1em;
+  font-size: var(--f10);
+  font-weight: bold;
+  line-height: 1.15;
+  text-transform: uppercase;
+}
+

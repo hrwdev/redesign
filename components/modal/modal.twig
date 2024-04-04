@@ -1,0 +1,18 @@
+<dialog class="modal" id="modal-{{ id }}" {{ open }}>
+  <div class="modal-header">
+    <div class="modal-title">{{ title }}</div>
+    {% include '@components/button/button.twig' with {
+      class: "modal-close",
+      onclick: "this.closest('dialog').close()",
+      src: '/icons/x.svg',
+      label: 'Close',
+      show_label: false,
+    } %}
+  </div>
+  <div class="modal-body">
+    {{ body }}
+  </div>
+  <div class="modal-footer">
+    {{ footer }}
+  </div>
+</dialog>

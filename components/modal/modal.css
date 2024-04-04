@@ -1,0 +1,44 @@
+::backdrop {
+  background: var(--near-white);
+  opacity: 0.8;
+}
+
+.modal {
+  padding: var(--gap);
+}
+
+.modal-footer {
+  margin-block-end: calc(var(--gap) * -1);
+  padding-block: var(--gap);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap);
+}
+
+@media (min-width: 768.01px) {
+  .modal {
+    min-height: 50vh;
+    max-height: 95vh;
+    min-width: 50vw;
+    max-width: 95vw;
+    border: 1px solid var(--near-white);
+  }
+  .modal-header {
+    position: relative;
+    margin-block-start: calc(var(--gap) * -1);
+    padding-block: var(--gap);
+    display: flex;
+    justify-content: space-between;
+  }
+  .modal-title {
+    flex: 1 0 auto;
+  }
+  .modal-close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    background: 0;
+  }
+}

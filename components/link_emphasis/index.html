@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Component: link_emphasis</title>
+  <link rel="shortcut icon" href="data:,"/>
+  <link rel="stylesheet" href="/css/reset.css"/>
+  <link rel='stylesheet' href='/css/main.css' />
+  <link rel="stylesheet" href="/fonts/fonts-edited.css"/>
+</head>
+<body>
+<main>
+
+</main>
+<script src="/js/twig.min.js"></script>
+<script src="/js/functions.js"></script>
+<script src="/js/main.js"></script>
+
+<script>
+  document.addEventListener('componentsLoaded', () => {
+    appendToMain(renderTwig('link_emphasis'));
+
+    // Fire a custom 'twigRendered' event, so that component JS
+    // can run after the components are built.
+    const event = new Event('twigRendered');
+    document.dispatchEvent(event);
+  });
+
+</script>
+</body>
+</html>

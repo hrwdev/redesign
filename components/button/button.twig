@@ -1,0 +1,8 @@
+<button id="{{ id }}" class="button {{ class }}" onclick="{{ onclick }}">
+  {% if show_label %}
+    {{ label }}
+  {% endif %}
+  {% if src %}
+    <img src="{{ src }}" alt="{% if not show_label %}{{ label }}{% endif %}" />
+  {% endif %}
+</button>

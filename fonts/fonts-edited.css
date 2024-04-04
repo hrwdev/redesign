@@ -1,0 +1,310 @@
+/*
+This CSS resource incorporates links to font software which is the valuable copyrighted
+property of Monotype Imaging and/or its suppliers. You may not attempt to copy, install,
+redistribute, convert, modify or reverse engineer this font software. Please contact Monotype
+Imaging with any questions regarding Web Fonts:  http://www.fonts.com
+*/
+/* @font-face{
+        font-family:"Freight Text W01_n3";
+        font-display: swap;
+        src:url("Fonts/b03cf04b-db8b-4246-9a4e-0b377fb1fb16.eot?#iefix") format("eot")
+    } */
+
+@font-face {
+  font-family: 'Freight Text W01';
+  font-display: swap;
+  src: url('Fonts/b03cf04b-db8b-4246-9a4e-0b377fb1fb16.eot?#iefix');
+  src: url('Fonts/b03cf04b-db8b-4246-9a4e-0b377fb1fb16.eot?#iefix')
+      format('eot'),
+    url('Fonts/b273cf7b-f375-4188-9216-9101312446b2.woff2') format('woff2'),
+    url('Fonts/a991fddf-68f5-41d7-a58b-ee7a8650a7df.woff') format('woff'),
+    url('Fonts/c5d5157c-0449-4176-9bb3-ababbe3fd2a5.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+/* @font-face{
+        font-family:"Freight Text W01_i3";
+        font-display: swap;
+        src:url("Fonts/f0916c21-b9a6-4a4a-9594-68eec9eead31.eot?#iefix") format("eot")
+    } */
+@font-face {
+  font-family: 'Freight Text W01';
+  font-display: swap;
+  src: url('Fonts/f0916c21-b9a6-4a4a-9594-68eec9eead31.eot?#iefix');
+  src: url('Fonts/f0916c21-b9a6-4a4a-9594-68eec9eead31.eot?#iefix')
+      format('eot'),
+    url('Fonts/6d321fba-bd5f-4afb-82c7-a801895f5a88.woff2') format('woff2'),
+    url('Fonts/80088bb5-4929-418e-9bba-d7c469420880.woff') format('woff'),
+    url('Fonts/10afe1b2-fc51-4beb-8f8d-dc51a72f9fb2.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+/* @font-face{
+        font-family:"Freight Text W01_n7";
+        font-display: swap;
+        src:url("Fonts/eae4eb86-457b-4f7f-a88c-2864f5145fed.eot?#iefix") format("eot")
+    } */
+@font-face {
+  font-family: 'Freight Text W01';
+  font-display: swap;
+  src: url('Fonts/eae4eb86-457b-4f7f-a88c-2864f5145fed.eot?#iefix');
+  src: url('Fonts/eae4eb86-457b-4f7f-a88c-2864f5145fed.eot?#iefix')
+      format('eot'),
+    url('Fonts/892ae817-932e-4400-b146-2035246d953e.woff2') format('woff2'),
+    url('Fonts/f95b7095-668b-49f4-a518-e1d4064d703a.woff') format('woff'),
+    url('Fonts/ba4f3346-16ab-4f71-9c08-e37502c30f95.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+/* @font-face{
+        font-family:"Freight Text W01_i7";
+        font-display: swap;
+        src:url("Fonts/1a1b9801-61f4-42c5-b049-004a6a9bc820.eot?#iefix") format("eot")
+    } */
+@font-face {
+  font-family: 'Freight Text W01';
+  font-display: swap;
+  src: url('Fonts/1a1b9801-61f4-42c5-b049-004a6a9bc820.eot?#iefix');
+  src: url('Fonts/1a1b9801-61f4-42c5-b049-004a6a9bc820.eot?#iefix')
+      format('eot'),
+    url('Fonts/12c4a9a8-1d86-4d72-a699-83c0e393f136.woff2') format('woff2'),
+    url('Fonts/60a3f9e0-bfb2-48f8-81ec-aa5ffd3f93ef.woff') format('woff'),
+    url('Fonts/615e9697-80ea-40f2-ae4e-43b5e93b4846.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'FF Meta Serif W01';
+  font-display: swap;
+  src: url('Fonts/b95879a4-6677-40bf-9528-ffecf9b247e4.eot?#iefix');
+  src: url('Fonts/b95879a4-6677-40bf-9528-ffecf9b247e4.eot?#iefix') format('eot'),
+  url('Fonts/540baff3-1dae-4349-b607-d71e6a8d5a3e.woff2') format('woff2'),
+  url('Fonts/329d96cf-0721-417a-9888-cc6b095163c3.woff') format('woff'),
+  url('Fonts/c46c5707-21ab-4331-99d5-197ac889ffc7.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* @font-face{
+        font-family:"FF Meta Serif W01_i3";
+        font-display: swap;
+        src:url("Fonts/a496a7b4-a708-45b5-be88-8059f43118cd.eot?#iefix") format("eot")
+    } */
+@font-face {
+  font-family: 'FF Meta Serif W01';
+  font-display: swap;
+  src: url('Fonts/a496a7b4-a708-45b5-be88-8059f43118cd.eot?#iefix');
+  src: url('Fonts/a496a7b4-a708-45b5-be88-8059f43118cd.eot?#iefix') format('eot'),
+  url('Fonts/3eed0fa3-246d-45d8-83c6-1b3bb5fad3c3.woff2') format('woff2'),
+  url('Fonts/a0df4306-2f97-461f-9069-7d113bf54b22.woff') format('woff'),
+  url('Fonts/b67726e3-8ffa-45d6-9bee-f1839d34d9f4.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+/* @font-face{
+        font-family:"FF Meta Serif W01_n5";
+        font-display: swap;
+        src:url("Fonts/c5912438-7d11-4e53-aec7-2066db9ef4a1.eot?#iefix") format("eot")
+    } */
+@font-face {
+  font-family: 'FF Meta Serif W01';
+  font-display: swap;
+  src: url('Fonts/c5912438-7d11-4e53-aec7-2066db9ef4a1.eot?#iefix');
+  src: url('Fonts/c5912438-7d11-4e53-aec7-2066db9ef4a1.eot?#iefix') format('eot'),
+  url('Fonts/0f21620d-7046-4d9b-8b1a-776b996ba66e.woff2') format('woff2'),
+  url('Fonts/dabb2ce5-a6e5-42bc-a433-6ea8562d099f.woff') format('woff'),
+  url('Fonts/0f5a2e8a-76ae-4d9c-9112-71333b2eacf8.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* @font-face{
+        font-family:"FF Meta Serif W01_n7";
+        font-display: swap;
+        src:url("Fonts/7e08fa85-157b-49a7-a0b3-4e57ecfc81ae.eot?#iefix") format("eot")
+    } */
+@font-face {
+  font-family: 'FF Meta Serif W01';
+  font-display: swap;
+  src: url('Fonts/7e08fa85-157b-49a7-a0b3-4e57ecfc81ae.eot?#iefix');
+  src: url('Fonts/7e08fa85-157b-49a7-a0b3-4e57ecfc81ae.eot?#iefix') format('eot'),
+  url('Fonts/05ebb84f-7132-4bba-a010-01a2fb46795b.woff2') format('woff2'),
+  url('Fonts/38708e4e-3137-4130-adcc-a00a0931bfce.woff') format('woff'),
+  url('Fonts/ea2e8efb-dc49-454e-aec7-8e28be819fd2.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* @font-face{
+        font-family:"FF Meta W03_n3";
+        font-display: swap;
+        src:url("Fonts/e88e0ca8-56f3-4186-908c-ff94d73e9b80.eot?#iefix") format("eot")
+    } */
+@font-face {
+  font-family: 'FF Meta W03';
+  font-display: swap;
+  src: url('Fonts/e88e0ca8-56f3-4186-908c-ff94d73e9b80.eot?#iefix');
+  src: url('Fonts/e88e0ca8-56f3-4186-908c-ff94d73e9b80.eot?#iefix')
+      format('eot'),
+    url('Fonts/df2fe43b-8657-4d10-94c9-7085acdf02f6.woff2') format('woff2'),
+    url('Fonts/79017add-bf54-40aa-9871-967c743d1779.woff') format('woff'),
+    url('Fonts/6b5b9484-aebb-4b86-8efd-d5345b5dece3.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+/* @font-face{
+        font-family:"FF Meta W03_i3";
+        font-display: swap;
+        src:url("Fonts/8e9bdb59-c10d-4521-9a62-5f51e884ff01.eot?#iefix") format("eot")
+    } */
+@font-face {
+  font-family: 'FF Meta W03';
+  font-display: swap;
+  src: url('Fonts/8e9bdb59-c10d-4521-9a62-5f51e884ff01.eot?#iefix');
+  src: url('Fonts/8e9bdb59-c10d-4521-9a62-5f51e884ff01.eot?#iefix')
+      format('eot'),
+    url('Fonts/7010a888-f7c4-4630-a9ce-d737d40a5fb4.woff2') format('woff2'),
+    url('Fonts/babcb0bb-1a61-475d-8a6e-8b53094972fd.woff') format('woff'),
+    url('Fonts/39a1b990-28f5-4c67-8342-d84c79c7df97.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+/* @font-face{
+        font-family:"FF Meta W03_n5";
+        font-display: swap;
+        src:url("Fonts/edb10ad6-3b49-4999-b637-f8cd137c1aad.eot?#iefix") format("eot")
+    } */
+@font-face {
+  font-family: 'FF Meta W03';
+  font-display: swap;
+  src: url('Fonts/edb10ad6-3b49-4999-b637-f8cd137c1aad.eot?#iefix');
+  src: url('Fonts/edb10ad6-3b49-4999-b637-f8cd137c1aad.eot?#iefix')
+      format('eot'),
+    url('Fonts/5361a8da-2038-4b9f-b58e-060e60605608.woff2') format('woff2'),
+    url('Fonts/407aae8b-c685-4c9e-8484-59ce8648be84.woff') format('woff'),
+    url('Fonts/e3753515-ab02-4ecb-87a5-f8cc051e5ed1.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+/* @font-face{
+        font-family:"FF Meta W03_i5";
+        font-display: swap;
+        src:url("Fonts/6d28f0bc-2323-4d6f-9901-994960adb0e5.eot?#iefix") format("eot")
+    } */
+@font-face {
+  font-family: 'FF Meta W03';
+  font-display: swap;
+  src: url('Fonts/6d28f0bc-2323-4d6f-9901-994960adb0e5.eot?#iefix');
+  src: url('Fonts/6d28f0bc-2323-4d6f-9901-994960adb0e5.eot?#iefix')
+      format('eot'),
+    url('Fonts/50df77b2-5db2-42bd-85e7-76a6f8ab7c3c.woff2') format('woff2'),
+    url('Fonts/21ffbe3c-bf67-4d27-a18e-89e2fe8194c3.woff') format('woff'),
+    url('Fonts/05b54eb9-8264-48ae-a027-c9ee736344e0.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+/* @font-face{
+        font-family:"FF Meta W03_n7";
+        font-display: swap;
+        src:url("Fonts/20fa1f22-23bd-480c-b91d-d6b78d1600ac.eot?#iefix") format("eot")
+    } */
+@font-face {
+  font-family: 'FF Meta W03';
+  font-display: swap;
+  src: url('Fonts/20fa1f22-23bd-480c-b91d-d6b78d1600ac.eot?#iefix');
+  src: url('Fonts/20fa1f22-23bd-480c-b91d-d6b78d1600ac.eot?#iefix')
+      format('eot'),
+    url('Fonts/8e1ac351-f27f-4875-8cb7-09b862b7a9df.woff2') format('woff2'),
+    url('Fonts/b23ccf56-0446-476c-adce-42ac11400ac5.woff') format('woff'),
+    url('Fonts/039357c9-fe3c-41fd-892e-4ab5dca221f7.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+/* @font-face{
+        font-family:"FF Meta W03_i7";
+        font-display: swap;
+        src:url("Fonts/32eae228-b007-4558-8fec-1106cd4b9d0a.eot?#iefix") format("eot")
+    } */
+@font-face {
+  font-family: 'FF Meta W03';
+  font-display: swap;
+  src: url('Fonts/32eae228-b007-4558-8fec-1106cd4b9d0a.eot?#iefix');
+  src: url('Fonts/32eae228-b007-4558-8fec-1106cd4b9d0a.eot?#iefix')
+      format('eot'),
+    url('Fonts/84c3073b-5c46-45f8-9aa7-8b1bc7d494cd.woff2') format('woff2'),
+    url('Fonts/3646909e-6665-4bc9-9ca4-755b0a619aef.woff') format('woff'),
+    url('Fonts/6b3103f4-5104-4245-afa8-34cb9aca380e.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'FF Meta W07';
+  font-display: swap;
+  src: url('Fonts/d499f279-cded-4d7c-95e7-5d22c8aff7d1.eot?#iefix');
+  src: url('Fonts/d499f279-cded-4d7c-95e7-5d22c8aff7d1.eot?#iefix') format('eot'),
+    url("Fonts/38b5004a-00f0-4ad8-a6f6-4c8fe48b074b.woff2") format("woff2"),
+    url("Fonts/d499f279-cded-4d7c-95e7-5d22c8aff7d1.woff") format("woff"),
+    url("Fonts/d499f279-cded-4d7c-95e7-5d22c8aff7d1.ttf") format("truetype"),
+    url("Fonts/d499f279-cded-4d7c-95e7-5d22c8aff7d1.svg") format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FF Meta W07';
+  font-display: swap;
+  src: url('Fonts/f36d8105-83af-4acb-a509-ce65c1697737.eot?#iefix');
+  src: url('Fonts/f36d8105-83af-4acb-a509-ce65c1697737.eot?#iefix') format('eot'),
+    url("Fonts/e525207f-03c8-4a27-a416-38254c83c9b1.woff2") format("woff2"),
+    url("Fonts/f36d8105-83af-4acb-a509-ce65c1697737.woff") format("woff"),
+    url("Fonts/f36d8105-83af-4acb-a509-ce65c1697737.ttf") format("truetype"),
+    url("Fonts/f36d8105-83af-4acb-a509-ce65c1697737.svg") format("svg");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'FF Meta W07';
+  font-display: swap;
+  src: url('Fonts/ddf9e5e1-6ea7-4b48-8343-bd8ccde5fa88.eot?#iefix');
+  src: url('Fonts/ddf9e5e1-6ea7-4b48-8343-bd8ccde5fa88.eot?#iefix') format('eot'),
+    url("Fonts/32a02776-64bf-464c-9c4f-4f57df3d72d6.woff2") format("woff2"),
+    url("Fonts/ddf9e5e1-6ea7-4b48-8343-bd8ccde5fa88.woff") format("woff"),
+    url('Fonts/ddf9e5e1-6ea7-4b48-8343-bd8ccde5fa88.ttf') format('truetype'),
+    url('Fonts/ddf9e5e1-6ea7-4b48-8343-bd8ccde5fa88.svg') format('svg');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FF Meta W07';
+  font-display: swap;
+  src: url('Fonts/147c1a85-4050-48c4-9caa-da3b70a7e62f.eot?#iefix');
+  src: url('Fonts/147c1a85-4050-48c4-9caa-da3b70a7e62f.eot?#iefix') format('eot'),
+    url("Fonts/db9413da-27da-4b88-9af0-6d69cdaabde9.woff2") format("woff2"),
+    url("Fonts/147c1a85-4050-48c4-9caa-da3b70a7e62f.woff") format("woff"),
+    url('Fonts/147c1a85-4050-48c4-9caa-da3b70a7e62f.ttf') format('truetype'),
+    url('Fonts/147c1a85-4050-48c4-9caa-da3b70a7e62f.svg') format('svg');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "SeriaArabic";
+  src: url("./ff_seria_arabic/SeriaArabic.otf");
+  font-weight: 100 600;
+}
+
+@font-face {
+  font-family: "SeriaArabic";
+  src: url("./ff_seria_arabic/SeriaArabic-Bold.otf");
+  font-weight: 700 1000;
+}
+
+@font-face {
+  font-family: "Dhivehi";
+  src: url("./ff-dhivehi/Dhivehi.otf");
+}

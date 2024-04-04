@@ -1,0 +1,24 @@
+.link-emphasis {
+  display: inline-block;
+  color: var(--blue);
+  font-weight: bold;
+}
+
+.link-emphasis::after {
+  display: inline-block;
+  content: '';
+  vertical-align: middle;
+  position: relative;
+  top: -0.03em;
+  width: 1em;
+  height: 1em;
+  margin-inline-start: 0.2em;
+  margin-inline-end: 0.3em;
+  background: url("/icons/CaretRight.svg");
+  background-size: cover;
+}
+
+.link-emphasis:hover::after {
+  margin-inline-start: 0.5em;
+  margin-inline-end: 0;
+}
