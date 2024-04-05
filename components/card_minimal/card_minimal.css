@@ -1,0 +1,14 @@
+.card-minimal {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.card-minimal h3 {
+  font-size: var(--f8);
+  font-weight: bold;
+}
+
+.card-minimal .card__date {
+  font-size: var(--f10);
+}

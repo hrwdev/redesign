@@ -1,0 +1,10 @@
+<section class="carousel splide" id="{{ id }}" aria-labelledby="{{ id }}__title">
+  <h2 class="carousel__title" id="{{ id }}__title">{{ title }}</h2>
+  <div class="splide__track">
+    <ul class="splide__list">
+      {% for item in items %}
+      <li class="splide__slide">{{ item }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>

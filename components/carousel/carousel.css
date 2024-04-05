@@ -1,0 +1,23 @@
+.carousel {
+  padding-block: 1rem;
+  padding-inline: var(--gap);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.carousel h2 {
+  font-size: var(--f5);
+  font-weight: bold;
+}
+
+.carousel:not(.is-active) .splide__list {
+  display: grid !important;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+}
+
+.splide__slide:not(:last-child) {
+  padding-inline-end: var(--gap);
+  border-inline-end: 1px solid var(--black);
+  margin-inline-end: var(--gap);
+}

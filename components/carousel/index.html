@@ -1,29 +1,26 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <title>Homepage Redesign</title>
+  <title>Component: carousel</title>
   <meta name="robots" content="noindex, nofollow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <script src=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js "></script>
   <link href=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css " rel="stylesheet">
   <link rel="shortcut icon" href="data:,"/>
-  <link rel="stylesheet" href="./css/reset.css" />
-  <link rel='stylesheet' href="./css/main.css" />
-  <link rel="stylesheet" href="./fonts/fonts-edited.css" />
+  <link rel="stylesheet" href="../../css/reset.css"/>
+  <link rel='stylesheet' href="../../css/main.css" />
+  <link rel="stylesheet" href="../../fonts/fonts-edited.css"/>
 </head>
 <body>
 <main>
 
 </main>
-<script src="./js/twig.min.js"></script>
-<script src="./js/functions.js"></script>
-<script src="./js/main.js"></script>
+<script src="../../js/twig.min.js"></script>
+<script src="../../js/functions.js"></script>
+<script src="../../js/main.js"></script>
 
 <script>
   document.addEventListener('componentsLoaded', () => {
-    appendToMain(renderTwig('hero', 'en', {
-      video_widget: renderTwig('modal_disclosure')
-    }));
     appendToMain(renderTwig('carousel', {
       items: [
         renderTwig('card_minimal'),
