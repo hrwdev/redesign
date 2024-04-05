@@ -87,6 +87,7 @@ function renderTwig(name, variant = 'default', blocks = {}) {
 
   // Include the whole 'vars' object as a local variable.
   templateVars.vars = vars;
+  templateVars.subdir = subdir;
 
   // Pass any twig blocks through to the template.
   let params = (blocks !== {})

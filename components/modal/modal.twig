@@ -4,7 +4,7 @@
     {% include '@components/button/button.twig' with {
       class: "modal-close",
       onclick: "this.closest('dialog').close()",
-      src: './icons/x.svg',
+      src: subdir ~ '/icons/x.svg',
       label: 'Close',
       show_label: false,
     } %}
