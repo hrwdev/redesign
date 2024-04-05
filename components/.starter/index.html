@@ -21,12 +21,6 @@
   document.addEventListener('componentsLoaded', () => {
     // Show component with default variables
     appendToMain(renderTwig('starter'));
-    // Show component using alternate set of variables
-    appendToMain(renderTwig('starter', 'es'));
-    // Show component using custom variable override and Twig block replacement
-    appendToMain(renderTwig('starter', {title: 'Overridden title'}, {
-      exampleblock: '<p>This markup replaces a Twig block</p>',
-    }));
 
     // Fire a custom 'twigRendered' event, so that component JS
     // can run after the components are built.
