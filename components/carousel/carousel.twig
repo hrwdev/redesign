@@ -7,4 +7,19 @@
       {% endfor %}
     </ul>
   </div>
+  <div class="splide__arrows">
+    {% include '@components/button/button.twig' with {
+      class: "splide__arrow splide__arrow--prev",
+      src: subdir ~ '/icons/CaretLeft.svg',
+      label: 'Previous',
+      show_label: false,
+    } %}
+    {% include '@components/button/button.twig' with {
+      class: "splide__arrow splide__arrow--next",
+      src: subdir ~ '/icons/CaretRight.svg',
+      label: 'Next',
+      show_label: false,
+    } %}
+    <ul class=" splide__pagination"></ul>
+  </div>
 </section>
