@@ -1,0 +1,10 @@
+<div class="trending">
+  <h3 class="trending__title">{{ title }}</h3>
+  <ul class="trending__links">
+    {% for link in links %}
+      <li>
+        {% include '@components/link_emphasis/link_emphasis.twig' with link %}
+      </li>
+    {% endfor %}
+  </ul>
+</div>

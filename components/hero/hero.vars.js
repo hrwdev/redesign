@@ -8,10 +8,10 @@ vars.hero = {
     body: "<p>Trans people in the Mexican state of Guanajuato suffer economic, medical, and labor discrimination, and other onerous legal impediments because the state has no process for issuing identity documents consistent with their gender. A new documentary follows the stories of two transgender women who have fought to have their gender and names legally recognized in Guanajuato.</p>",
     package: "Package label",
     links: [
-      {href: "#", text: "Read the report"},
-      {href: "#", text: "Watch the video"},
-      {href: "#", text: "Donate"},
-      {href: "#", text: "Sign the petition"},
+      {url: "#", text: "Read the report"},
+      {url: "#", text: "Watch the video"},
+      {url: "#", text: "Donate"},
+      {url: "#", text: "Sign the petition"},
     ],
   },
   breaking: {

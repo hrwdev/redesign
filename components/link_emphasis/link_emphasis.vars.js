@@ -1,6 +1,6 @@
 vars.link_emphasis = {
   default: {
-    href: '#',
+    url: '#',
     text: 'Link text',
   },
 };
