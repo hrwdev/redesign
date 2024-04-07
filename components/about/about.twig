@@ -1,0 +1,18 @@
+<div class="about">
+  <div class='about__image'>
+    <a href="#">{{ image }}</a>
+  </div>
+  <div class='about__card'>
+    <h2 class='about__headline'>
+      {{ headline }}
+    </h2>
+    {% block body %}
+      <div class='about__body'>
+        {{ body }}
+      </div>
+      <div class='about__cta'>
+        {% include '@components/link_button/link_button.twig' with link %}
+      </div>
+    {% endblock %}
+  </div>
+</div>

@@ -1,7 +1,7 @@
 vars.link_button = {
   default: {
     type: 'primary',
-    href: '#',
+    url: '#',
     text: 'Primary button',
   },
   secondary: {
