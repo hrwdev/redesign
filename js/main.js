@@ -11,6 +11,7 @@ const subdir = (window.location.pathname.startsWith('/redesign'))
 Promise.all([
   /* @create_component.sh insertion point */
   loadComponent('card'),
+  loadComponent('spotlight'),
   loadComponent('about'),
   loadComponent('trending'),
   loadComponent('card_minimal'),

@@ -42,6 +42,10 @@
   width: fit-content;
 }
 
+.card-large .card__flair {
+  margin-block: -0.5em;
+}
+
 .card__teaser {
   font-family: var(--font-serif);
   line-height: 1.5;
@@ -55,6 +59,10 @@
   grid-template-columns: repeat(12, 1fr);
   gap: var(--gap);
   align-items: center;
+}
+
+.card-sidebyside.card-small {
+  align-items: start;
 }
 
 .card-sidebyside .card__image {

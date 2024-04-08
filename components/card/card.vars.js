@@ -13,7 +13,7 @@ vars.card = {
   },
   stacked: {
     style: 'stacked',
-  },
+  } ,
   sidebyside: {
     style: 'sidebyside',
     size: 'small',

@@ -1,0 +1,18 @@
+<div class="spotlight">
+  <h2 class="spotlight__title">{{ title }}</h2>
+  <div class="spotlight__layout">
+    <div class="spotlight__primary">
+      {% block primary %}
+        {% include '@components/card/card.twig' with vars.card.default %}
+      {% endblock %}
+    </div>
+    <div class="spotlight__secondary">
+      {% block secondary %}
+        {% include '@components/card/card.twig' with vars.card.default|merge(vars.card.sidebyside) %}
+        {% include '@components/card/card.twig' with vars.card.default|merge(vars.card.sidebyside) %}
+        {% include '@components/card/card.twig' with vars.card.default|merge(vars.card.sidebyside) %}
+        {% include '@components/card/card.twig' with vars.card.default|merge(vars.card.sidebyside) %}
+      {% endblock %}
+    </div>
+  </div>
+</div>

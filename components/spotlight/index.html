@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Component: spotlight</title>
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="shortcut icon" href="data:,"/>
+  <link rel="stylesheet" href="../../css/reset.css"/>
+  <link rel='stylesheet' href="../../css/main.css" />
+  <link rel="stylesheet" href="../../fonts/fonts-edited.css"/>
+</head>
+<body>
+<main>
+
+</main>
+<script src="../../js/twig.min.js"></script>
+<script src="../../js/functions.js"></script>
+<script src="../../js/main.js"></script>
+
+<script>
+  document.addEventListener('componentsLoaded', () => {
+    // Show component with default variables
+    appendToMain(renderTwig('spotlight'));
+
+    // Fire a custom 'twigRendered' event, so that component JS
+    // can run after the components are built.
+    const event = new Event('twigRendered');
+    document.dispatchEvent(event);
+  });
+
+</script>
+</body>
+</html>
