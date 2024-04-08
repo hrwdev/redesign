@@ -16,12 +16,18 @@
   grid-auto-columns: 1fr;
 }
 
-.splide__slide {
-  padding-inline-end: var(--gap);
+.splide__track {
+  margin-inline: calc(var(--gap) * -1);
 }
-.splide__slide:not(:last-child) {
+
+.splide__slide {
+  padding-inline: var(--gap);
   border-inline-end: 1px solid var(--black);
-  margin-inline-end: var(--gap);
+}
+.splide__slide:last-child {
+  border-inline-end: 0;
+  padding-inline-end: calc(var(--gap) + 10%);
+  width: calc(55%) !important;
 }
 
 .splide__arrows {

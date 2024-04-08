@@ -1,9 +1,10 @@
 document.addEventListener('twigRendered', (ev) => {
   document.querySelectorAll('.splide').forEach((element) => {
     new Splide(element, {
-      drag: true,
-      rewindByDrag: true,
+      drag: 'free',
+      rewind: true,
       perPage: 2,
+      fixedWidth: 'calc(45%)',
       focus: 0,
       focusableNodes: '',
       mediaQuery: 'min',
