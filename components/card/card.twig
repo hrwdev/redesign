@@ -12,7 +12,9 @@
       {% if type %}<span class="card__type">{{ type }}</span>{% endif %}
     </div>
     {% endif %}
-    <{{ heading_level }} class="card__title">{{ title }}</{{ heading_level }}>
+    <{{ heading_level }} class="card__title">
+      <a href="{{ url }}">{{ title }}</a>
+    </{{ heading_level }}>
     {% if flair %}
       {% set flair_type = (flair == 'Breaking News Statement') ? 'breaking' : 'default' %}
       <div class="card__flair flair--{{ flair_type }}">{{ flair }}</div>
