@@ -16,6 +16,7 @@
   margin-inline-end: 0.3em;
   background: url("../../icons/CaretRight.svg");
   background-size: cover;
+  transition: margin 0.25s ease-in-out;
 }
 
 .link-emphasis:hover::after {
