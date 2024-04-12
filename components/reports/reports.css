@@ -1,0 +1,23 @@
+.reports {
+  padding: var(--gap);
+}
+
+.reports h2 {
+  font-size: var(--f5);
+  font-weight: bold;
+}
+
+.reports__header {
+  padding-block-end: 15px;
+  border-block-end: 1px solid var(--black);
+  margin-block-end: var(--gap);
+}
+
+.reports__description {
+  font-family: var(--font-serif);
+}
+
+.reports__list {
+  display: flex;
+  gap: var(--gap);
+}

@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="./fonts/fonts-edited.css" />
 </head>
 <body>
-<main>
+<main class="util-block-spacing">
 
 </main>
 <script src="./js/twig.min.js"></script>
@@ -35,6 +35,7 @@
     appendToMain(renderTwig('trending'));
     appendToMain(renderTwig('about'));
     appendToMain(renderTwig('spotlight'));
+    appendToMain(renderTwig('reports'));
 
     // Fire a custom 'twigRendered' event, so that component JS
     // can run after the components are built.
