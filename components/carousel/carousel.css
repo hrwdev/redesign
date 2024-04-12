@@ -26,6 +26,9 @@
 }
 .splide__slide:last-child {
   border-inline-end: 0;
+}
+
+.is-active .splide__slide:last-child {
   padding-inline-end: calc(var(--gap) + 10%);
   width: calc(55%) !important;
 }
