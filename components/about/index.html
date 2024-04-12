@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="../../fonts/fonts-edited.css"/>
 </head>
 <body>
-<main>
+<main class="util-block-spacing">
 
 </main>
 <script src="../../js/twig.min.js"></script>
@@ -21,6 +21,7 @@
   document.addEventListener('componentsLoaded', () => {
     // Show component with default variables
     appendToMain(renderTwig('about'));
+    appendToMain(renderTwig('about','option2'));
 
     // Fire a custom 'twigRendered' event, so that component JS
     // can run after the components are built.

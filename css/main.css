@@ -43,3 +43,9 @@ html {
   white-space: nowrap;
   border-width: 0;
 }
+
+.util-block-spacing {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
