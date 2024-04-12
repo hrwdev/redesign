@@ -1,0 +1,29 @@
+<div class="hero-brand">
+  <div class='hero-brand__card util-block-spacing'>
+    {% if eyebrow %}
+      <div class='hero-brand__eyebrow'><span class="inner">{{ eyebrow }}</span></div>
+    {% endif %}
+    <h2 class='hero-brand__headline'>
+      {{ headline }}
+    </h2>
+    <div class='hero-brand__body'>
+      {{ body }}
+    </div>
+    {% if ctas %}
+      <ul class="hero-brand__ctas">
+        {% for cta in ctas %}
+          <li>{% include '@components/link_button/link_button.twig' with cta %}</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  </div>
+  <div class='hero-brand__image'>
+    {{ image }}
+  </div>
+  <div class='hero-video-trigger'>
+    {% block video_widget %}
+      {% include '@components/modal_disclosure/modal_disclosure.twig'
+        with vars.modal_disclosure %}
+    {% endblock %}
+  </div>
+</div>
