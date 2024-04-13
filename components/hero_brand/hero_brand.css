@@ -69,6 +69,10 @@
     background: linear-gradient(to right, black 25%, transparent);
   }
 
+  [dir="rtl"] .hero-brand__card {
+    background: linear-gradient(to left, black 25%, transparent);
+  }
+
   .hero-video-trigger {
     position: absolute;
     z-index: 2;

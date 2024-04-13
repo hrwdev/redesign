@@ -1,26 +1,17 @@
 <section class="reports">
-  <header class="reports__header util-block-spacing">
-    <h2 class="reports__title">{{ title }}</h2>
-    <div class="reports__description">{{ description }}</div>
-    <div class="reports__link">
-      {% include '@components/link_emphasis/link_emphasis.twig' with {
-        url: link_url,
-        text: link_text,
-      } %}
-    </div>
-  </header>
+  {% include '@components/section_header/section_header.twig' %}
   <ul class="reports__list">
-    <li>
+    <li class="reports__item">
       {% include '@components/report/report.twig' with vars.report.default %}
     </li>
-    <li>
-      {% include '@components/report/report.twig' with vars.report.default %}
+    <li class="reports__item">
+      {% include '@components/report/report.twig' with vars.report.en1 %}
     </li>
-    <li>
-      {% include '@components/report/report.twig' with vars.report.default %}
+    <li class="reports__item">
+      {% include '@components/report/report.twig' with vars.report.en2 %}
     </li>
-    <li>
-      {% include '@components/report/report.twig' with vars.report.default %}
+    <li class="reports__item">
+      {% include '@components/report/report.twig' with vars.report.en3 %}
     </li>
   </ul>
 </section>

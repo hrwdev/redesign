@@ -1,0 +1,18 @@
+<header class="section-header util-block-spacing">
+
+  <h2 class="section-header__title">{{ title }}</h2>
+
+  {% if link_url and link_text %}
+    <div class="section-header__link">
+      {% include '@components/link_emphasis/link_emphasis.twig' with {
+        url: link_url,
+        text: link_text,
+      } %}
+    </div>
+  {% endif %}
+
+  {% if description %}
+    <div class="section-header__description">{{ description }}</div>
+  {% endif %}
+
+</header>
