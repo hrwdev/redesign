@@ -1,24 +1,25 @@
 <article class="report">
-  <div class="report__card">
-    <div class="report__cover">
-      {{ image }}
-    </div>
-    <a class="report__details" href="{{ url }}">
-      <h3 class="report__title">
-        {{ title }}
-      </h3>
-      <div class="report__subtitle">
-        {{ subtitle }}
-      </div>
-      <div class="report__teaser">
-        {{ teaser }}
-      </div>
-      <div class="report__date">
-        {{ date }}
-      </div>
-      <div class="report__pagecount">
-        {{ pagecount }}
-      </div>
-    </a>
+  <div class="report__cover">
+    {{ image }}
   </div>
+  <a class="report__details" href="{{ url }}">
+    <h3 class="report__title">
+      {{ title }}
+    </h3>
+    <div class="report__subtitle">
+      {{ subtitle }}
+    </div>
+    <div class="report__teaser">
+      {{ teaser }}
+    </div>
+    <div class="report__date">
+      {{ date }}
+    </div>
+    <div class="report__pagecount">
+      {{ pagecount }}
+    </div>
+  </a>
+  <button class="report__button" aria-label="More info" tabindex="-1">
+    <div class="report__button-icon" aria-hidden="true">i</div>
+  </button>
 </article>
