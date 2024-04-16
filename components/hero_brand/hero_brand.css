@@ -46,23 +46,25 @@
   }
 
   .hero-brand__image {
-    position: absolute;
     z-index: 0;
-    object-fit: cover;
+    grid-column: 1 / 13;
+    grid-row: 1;
     width: 100%;
     height: 100%;
   }
 
   .hero-brand__image img {
     object-fit: cover;
-    height: 100%;
     width: 100%;
+    height: 100%;
   }
 
   .hero-brand__card {
     z-index: 1;
     grid-column: 1 / 12;
     grid-row: 1;
+    height: 100%;
+    max-width: calc(50rem + 50%); /* constrain line length for very wide screens */
     padding-block: 160px;
     padding-inline-start: calc(100% / 11);
     padding-inline-end: calc((100% / 11) * 5);
