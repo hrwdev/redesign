@@ -1,5 +1,8 @@
 document.addEventListener('twigRendered', (ev) => {
   document.querySelectorAll('.report').forEach((element) => {
-    // component JS code goes here
+    // Prevent touch devices from simulating a mouseover event on touch.
+    element.addEventListener('touchend', (event) => {
+      event.stopPropagation();
+    })
   });
 });

@@ -11,7 +11,7 @@ vars.report = {
   en1: {
     title: '“The Boot on My Neck”',
     subtitle: 'Iranian Authorities’ Crime of Persecution Against Baha’is in Iran',
-    url: '#',
+    url: 'https://hrw.org',
     image: '<img width="639" height="828" src="https://www.hrw.org/sites/default/files/media_2024/03/202404mena_iran_bahai_reportcover.jpg" alt="Report cover" />',
     teaser: 'Human Rights Watch documents Iranian authorities’ systematic violation of the fundamental rights of members of the Baha’i community through discriminatory laws and policies that target them.',
     date: 'April 1, 2024',
@@ -20,7 +20,7 @@ vars.report = {
   en2: {
     title: 'In Harm’s Way',
     subtitle: 'How Michigan’s Forced Parental Consent for Abortion Law Hurts Young People',
-    url: '#',
+    url: 'https://hrw.org',
     image: '<img width="639" height="828" src="https://www.hrw.org/sites/default/files/media_2024/03/202403us_michigan_parentalconsent_cover.jpg" alt="Report cover" />',
     teaser: 'Examines the impact of a Michigan law that requires people under age 18 seeking an abortion to have a parent or legal guardian’s written consent or get approval from a judge in a process known as “judicial bypass.”',
     date: 'March 28, 2024',
@@ -29,7 +29,7 @@ vars.report = {
   en3: {
     title: '“I Just Want to Contribute to Society”',
     subtitle: 'The Need for Legal Gender Recognition in Tabasco, Mexico',
-    url: '#',
+    url: 'https://hrw.org',
     image: '<img width="639" height="828" src="https://www.hrw.org/sites/default/files/media_2024/03/202403americas_mexico_lgbt_tabasco_cover.jpg" alt="Report cover" />',
     teaser: 'Trans people experience pervasive socioeconomic disadvantages due to a mismatch between their gender and their identity documents.',
     date: 'March 6, 2024',
