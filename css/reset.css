@@ -10,6 +10,11 @@
   border-color: #000;
 }
 
+.is-keyboard-user :focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px #f6691c;
+}
+
 html,
 body,
 blockquote,

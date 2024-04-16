@@ -1,8 +1,11 @@
 <article class="report">
+  <button class="report__button" aria-label="More details" aria-expanded="false">
+    <div class="report__button-icon" aria-hidden="true"></div>
+  </button>
   <div class="report__cover">
     {{ image }}
   </div>
-  <a class="report__details" href="{{ url }}">
+  <a class="report__details util-block-spacing" href="{{ url }}">
     <h3 class="report__title">
       {{ title }}
     </h3>
@@ -19,7 +22,4 @@
       {{ pagecount }}
     </div>
   </a>
-  <button class="report__button" aria-label="More info" tabindex="-1">
-    <div class="report__button-icon" aria-hidden="true">i</div>
-  </button>
 </article>
