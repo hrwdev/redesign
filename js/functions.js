@@ -106,3 +106,12 @@ function renderTwig(name, variant = 'default', blocks = {}) {
 function appendToMain(html) {
   document.querySelector('main').insertAdjacentHTML('beforeend', html);
 }
+
+/**
+ * Create a random alphanumeric string of 9 characters.
+ *
+ * @returns {string}
+ */
+function getRandomStringId() {
+  return Math.random().toString(36).substr(2, 9);
+}

@@ -1,11 +1,11 @@
-<article class="report">
-  <button class="report__button" aria-label="More details" aria-expanded="false">
+<article class="report" id="{{ id }}">
+  <button class="report__button" aria-label="More details" aria-controls="report__details-{{ id }}" aria-expanded="false">
     <div class="report__button-icon" aria-hidden="true"></div>
   </button>
   <div class="report__cover">
     {{ image }}
   </div>
-  <a class="report__details util-block-spacing" href="{{ url }}">
+  <a class="report__details util-block-spacing" id="report__details-{{ id }}" href="{{ url }}">
     <h3 class="report__title">
       {{ title }}
     </h3>

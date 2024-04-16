@@ -1,5 +1,6 @@
 vars.report = {
   default: {
+    id: getRandomStringId(),
     title: 'Neglected in the Jungle',
     subtitle: 'Inadequate Protection and Assistance for Migrants and Asylum Seekers Crossing the Darién Gap',
     url: 'https://hrw.org',
@@ -9,6 +10,7 @@ vars.report = {
     pagecount: '110 pages',
   },
   en1: {
+    id: getRandomStringId(),
     title: '“The Boot on My Neck”',
     subtitle: 'Iranian Authorities’ Crime of Persecution Against Baha’is in Iran',
     url: 'https://hrw.org',
@@ -18,6 +20,7 @@ vars.report = {
     pagecount: '49 pages'
   },
   en2: {
+    id: getRandomStringId(),
     title: 'In Harm’s Way',
     subtitle: 'How Michigan’s Forced Parental Consent for Abortion Law Hurts Young People',
     url: 'https://hrw.org',
@@ -27,6 +30,7 @@ vars.report = {
     pagecount: '36 pages'
   },
   en3: {
+    id: getRandomStringId(),
     title: '“I Just Want to Contribute to Society”',
     subtitle: 'The Need for Legal Gender Recognition in Tabasco, Mexico',
     url: 'https://hrw.org',
