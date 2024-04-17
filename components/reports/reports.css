@@ -9,7 +9,7 @@
  */
 @media (max-width: 768px) {
   .reports .report {
-    max-width: min(calc(100vw - (var(--gap) * 3)), 280px); // Ensures that part of the next slide is always visible in the carousel
+    max-width: min(calc(100vw - (var(--gap) * 3)), 280px); /* Ensures that part of the next slide is always visible in the carousel */
   }
 }
 
@@ -18,6 +18,6 @@
  */
 @media (min-width: 768.01px) {
   .reports .report {
-    width: calc((1440px - (var(--gap) * 5)) / 4); // Fit 4 items in 1440px screen, with gap/padding
+    width: calc((1440px - (var(--gap) * 5)) / 4); /* Fit 4 items in 1440px screen, with gap/padding */
   }
 }

@@ -9,5 +9,9 @@ vars.modal_disclosure = {
     id: 'hero-video-es',
     title: '¿Qué es Human Rights Watch?',
     footer: '<a class="link-button button-primary" href="#">Aprende más</a>'
+  },
+  ar: {
+    title: 'ما هي هيومن رايتس ووتش؟',
+    footer: '<a class="link-button button-primary" href="#">يتعلم أكثر</a>'
   }
 };

@@ -74,6 +74,9 @@
   [dir="rtl"] .hero-brand__card {
     background: linear-gradient(to left, black 25%, transparent);
   }
+  [dir="rtl"] .hero-brand__image {
+    transform: scaleX(-1);
+  }
 
   .hero-video-trigger {
     position: absolute;

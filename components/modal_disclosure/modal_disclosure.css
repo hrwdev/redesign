@@ -13,6 +13,10 @@
   cursor: pointer;
 }
 
+.modal-disclosure summary::-webkit-details-marker {
+  display: none;
+}
+
 .modal-disclosure summary::after {
   display: block;
   content: '';

@@ -24,3 +24,10 @@
   margin-inline-start: 0.5em;
   margin-inline-end: 0;
 }
+
+/**
+ * RTL adjustments
+ */
+[dir="rtl"] .link-emphasis::after {
+  transform: scaleX(-1);
+}

@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <title>Homepage Redesign</title>
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <script src=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js "></script>
+  <link href=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide-core.min.css " rel="stylesheet">
+  <link rel="shortcut icon" href="data:,"/>
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel='stylesheet' href="./css/main.css" />
+  <link rel="stylesheet" href="./fonts/fonts-edited.css" />
+</head>
+<body>
+<main class="util-block-spacing">
+
+</main>
+<script src="./js/twig.min.js"></script>
+<script src="./js/functions.js"></script>
+<script src="./js/main.js"></script>
+
+<script>
+  document.addEventListener('componentsLoaded', () => {
+    appendToMain(renderTwig('hero_brand', 'ar', {
+      video_widget: renderTwig('modal_disclosure', 'ar')
+    }));
+    appendToMain(renderTwig('strip', {
+      title: 'أخبار مميزة',
+      items: [
+        renderTwig('card_minimal', 'ar'),
+        renderTwig('card_minimal', 'ar1'),
+        renderTwig('card_minimal', 'ar2'),
+        renderTwig('card_minimal', 'ar3'),
+      ]
+    }));
+    appendToMain(renderTwig('trending', 'ar'));
+    appendToMain(renderTwig('about', 'ar'));
+    appendToMain(renderTwig('spotlight', 'ar', {
+      primary: renderTwig('card', 'ar'),
+      secondary: renderTwig('card', 'ar_sidebyside')
+               + renderTwig('card', 'ar_sidebyside2')
+               + renderTwig('card', 'ar_sidebyside3')
+               + renderTwig('card', 'ar_sidebyside4')
+    }));
+    appendToMain(renderTwig('reports', {
+      title: 'التقارير',
+      description: false,
+      link_url: '#',
+      link_text: 'مزيد من التقارير',
+      items: [
+        renderTwig('report', 'ar'),
+        renderTwig('report', 'ar1'),
+        renderTwig('report', 'ar2'),
+        renderTwig('report', 'ar3'),
+      ]
+    }));
+
+    // Fire a custom 'twigRendered' event, so that component JS
+    // can run after the components are built.
+    const event = new Event('twigRendered');
+    document.dispatchEvent(event);
+  });
+
+</script>
+</body>
+</html>

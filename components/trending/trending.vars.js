@@ -9,4 +9,13 @@ vars.trending = {
       {url: '#', text: 'Tigray Conflict'},
     ],
   },
+  ar: {
+    title: 'الأكثر رواجا',
+    links: [
+      {url: '#', text: 'العراق '},
+      {url: '#', text: 'السعودية'},
+      {url: '#', text: 'سوريا'},
+      {url: '#', text: 'فيروس كورونا'},
+    ],
+  },
 };

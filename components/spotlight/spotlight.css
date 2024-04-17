@@ -16,6 +16,10 @@
   gap: var(--gap);
 }
 
+.spotlight img {
+  width: 100%;
+}
+
 @media (max-width: 768px) {
   .spotlight__primary {
     margin-block-end: var(--gap);

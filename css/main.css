@@ -27,6 +27,9 @@
   --f9: 0.875rem;
   --f10: 0.75rem;
 }
+html[lang="ar"] {
+  --font-sans: "SeriaArabic", sans;
+}
 
 html {
   font-family: var(--font-sans), sans-serif;

@@ -57,3 +57,10 @@
 .splide:not(.is-overflow) .splide__arrows {
   display: none;
 }
+
+/**
+ * RTL adjustments
+ */
+[dir="rtl"] .splide__arrow {
+  transform: scaleX(-1);
+}

@@ -12,4 +12,10 @@ vars.reports = {
       'quux',
     ],
   },
+  ar: {
+    title: 'التقارير',
+    description: false,
+    link_url: '#',
+    link_text: 'مزيد من التقارير',
+  }
 };
