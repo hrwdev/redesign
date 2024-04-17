@@ -21,14 +21,7 @@
 
 <script>
   document.addEventListener('componentsLoaded', () => {
-    appendToMain(renderTwig('carousel', {
-      items: [
-        renderTwig('card_minimal'),
-        renderTwig('card_minimal', 'en1'),
-        renderTwig('card_minimal', 'en2'),
-        renderTwig('card_minimal', 'en3'),
-      ]
-    }));
+    appendToMain(renderTwig('carousel'));
 
     // Fire a custom 'twigRendered' event, so that component JS
     // can run after the components are built.

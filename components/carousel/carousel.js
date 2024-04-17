@@ -3,6 +3,7 @@ document.addEventListener('twigRendered', (ev) => {
     let options = {
       drag: 'free',
       rewind: true,
+      padding: {right: 40},
       focus: 0,
       focusableNodes: '',
       mediaQuery: 'min',    };

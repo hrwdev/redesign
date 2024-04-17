@@ -1,41 +1,27 @@
 .carousel {
-  padding-block: 1rem;
-  padding-inline: var(--gap);
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-.carousel h2 {
-  font-size: var(--f5);
-  font-weight: bold;
 }
 
-.carousel.is-initialized:not(.is-active) .splide__list {
+.splide.is-initialized:not(.is-active) .splide__list {
   display: grid;
   grid-auto-flow: column;
   grid-auto-columns: 1fr;
 }
 
 .splide__track {
-  margin-inline: calc(var(--gap) * -1);
+  margin-inline: calc(var(--gap) * -1); /* Lets slides break out of their container slightly (UX hint that there is horizontal content) */
 }
 
-.splide__slide {
-  padding-inline: var(--gap);
-  border-inline-end: 1px solid var(--black);
-}
-.splide__slide:last-child {
-  border-inline-end: 0;
-}
-
-.is-active .splide__slide:last-child {
-  padding-inline-end: calc(var(--gap) + 10%);
-  width: calc(55%) !important;
-}
-
+/**
+ * Contain and reorder the carousel arrows and pagination
+ */
 .splide__arrows {
   display: flex;
   justify-content: center;
+  margin-block-start: var(--gap);
+}
+
+.splide__arrow--prev {
+  order: 1;
 }
 
 .splide__pagination {
@@ -67,6 +53,7 @@
   background: var(--blue);
 }
 
-.splide:not(.is-active) .splide__arrows {
+.splide:not(.is-active) .splide__arrows,
+.splide:not(.is-overflow) .splide__arrows {
   display: none;
 }

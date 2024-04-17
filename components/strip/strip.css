@@ -1,0 +1,14 @@
+.strip {
+  padding-block: 1rem;
+  padding-inline: var(--gap);
+}
+
+.strip .splide__slide {
+  padding-inline: var(--gap);
+  border-inline-end: 1px solid var(--black);
+}
+
+.strip .splide__slide:last-child {
+  border-inline-end: 0;
+}
+

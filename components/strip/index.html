@@ -1,18 +1,17 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <title>Component: reports</title>
+  <title>Component: strip</title>
   <meta name="robots" content="noindex, nofollow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <link rel="shortcut icon" href="data:,"/>
   <script src=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js "></script>
-  <link href=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide-core.min.css " rel="stylesheet">
-  <link rel="stylesheet" href="../../css/reset.css"/>
+  <link href=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide-core.min.css " rel="stylesheet">  <link rel="stylesheet" href="../../css/reset.css"/>
   <link rel='stylesheet' href="../../css/main.css" />
   <link rel="stylesheet" href="../../fonts/fonts-edited.css"/>
 </head>
 <body>
-<main>
+<main class="util-block-spacing">
 
 </main>
 <script src="../../js/twig.min.js"></script>
@@ -21,13 +20,12 @@
 
 <script>
   document.addEventListener('componentsLoaded', () => {
-    // Show component with default variables
-    appendToMain(renderTwig('reports', {
+    appendToMain(renderTwig('strip', {
       items: [
-        renderTwig('report'),
-        renderTwig('report', 'en1'),
-        renderTwig('report', 'en2'),
-        renderTwig('report', 'en3'),
+        renderTwig('card_minimal'),
+        renderTwig('card_minimal', 'en1'),
+        renderTwig('card_minimal', 'en2'),
+        renderTwig('card_minimal', 'en3'),
       ]
     }));
 

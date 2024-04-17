@@ -24,7 +24,7 @@
     appendToMain(renderTwig('hero', 'en', {
       video_widget: renderTwig('modal_disclosure')
     }));
-    appendToMain(renderTwig('carousel', {
+    appendToMain(renderTwig('strip', {
       items: [
         renderTwig('card_minimal'),
         renderTwig('card_minimal', 'en1'),
@@ -35,7 +35,14 @@
     appendToMain(renderTwig('trending'));
     appendToMain(renderTwig('about'));
     appendToMain(renderTwig('spotlight'));
-    appendToMain(renderTwig('reports'));
+    appendToMain(renderTwig('reports', {
+      items: [
+        renderTwig('report'),
+        renderTwig('report', 'en1'),
+        renderTwig('report', 'en2'),
+        renderTwig('report', 'en3'),
+      ]
+    }));
 
     // Fire a custom 'twigRendered' event, so that component JS
     // can run after the components are built.

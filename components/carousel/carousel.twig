@@ -1,5 +1,4 @@
-<section class="carousel splide" id="{{ id }}" data-splide='{{ options }}' aria-labelledby="{{ id }}__title">
-  <h2 class="carousel__title" id="{{ id }}__title">{{ title }}</h2>
+<div class="carousel splide" data-splide='{{ options }}'>
   <div class="splide__track">
     <ul class="splide__list">
       {% for item in items %}
@@ -22,4 +21,4 @@
     } %}
     <ul class=" splide__pagination"></ul>
   </div>
-</section>
+</div>

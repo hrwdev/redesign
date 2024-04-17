@@ -1,7 +1,6 @@
 .report {
-  min-width: min(calc(100vw - (var(--gap) * 4)), 20rem);
-  max-width: min(calc(100vw - (var(--gap) * 4)), 24rem);
   position: relative;
+  width: fit-content;
 }
 
 .report__details {
