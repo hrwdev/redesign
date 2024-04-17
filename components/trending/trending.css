@@ -3,15 +3,16 @@
   color: var(--white);
   display: flex;
   align-items: center;
+  gap: calc(var(--gap) * 2);
+  padding-block: 1rem;
+  padding-inline-end: 0 !important; /* Allow overflow text to hit window edge, indicating horizontal scroll */
 }
 
 .trending h3 {
   font-size: var(--f8);
-  padding: 1rem;
 }
 
 .trending__links {
-  padding: 1rem;
   overflow-x: scroll;
   white-space: nowrap;
   scrollbar-width: none;

@@ -1,7 +1,8 @@
 .reports {
   background: var(--near-white);
-  padding: var(--gap);
+  padding-block: calc(var(--gap) * 2);
 }
+
 
 /**
  * Mobile only

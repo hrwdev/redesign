@@ -1,4 +1,7 @@
-.hero-card {
+.hero {
+}
+
+.hero__card {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
@@ -6,24 +9,24 @@
   padding: 1rem var(--gap);
 }
 
-.hero-card--eyebrow {
+.hero__eyebrow {
   font-weight: bold;
   line-height: 1;
   border-bottom: 1.5px solid #000;
   margin-block-end: 1rem;
 }
 
-.hero-card--eyebrow .inner {
+.hero__eyebrow .inner {
   display: inline-block;
   padding-block: 0.5rem;
   font-size: var(--f7);
 }
 
-.hero-breaking .hero-card--eyebrow {
+.hero-breaking .hero__eyebrow {
   border-bottom-color: var(--red);
 }
 
-.hero-breaking .hero-card--eyebrow .inner {
+.hero-breaking .hero__eyebrow .inner {
   border: 1.5px solid var(--red);
   border-bottom: 0;
   padding-inline: 0.5rem;
@@ -31,17 +34,17 @@
   text-transform: uppercase;
 }
 
-.hero-card--date {
+.hero__date {
   font-size: var(--f10);
 }
 
-.hero-card--headline {
+.hero__headline {
   font-size: var(--f2);
   font-weight: 700;
   margin-block-start: -0.25rem;
 }
 
-.hero-card--body {
+.hero__body {
   font-family: var(--font-serif);
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -49,20 +52,20 @@
   overflow: hidden;
 }
 
-.hero-card--package {
+.hero__package {
   font-weight: bold;
   line-height: 1;
   border-bottom: 1.5px solid #000;
   margin-block-end: 0.5rem;
 }
 
-.hero-card--package .inner {
+.hero__package .inner {
   display: inline-block;
   padding-block: 0.5rem;
   font-size: var(--f7);
 }
 
-.hero-card--links {
+.hero__links {
   display: flex;
   flex-wrap: wrap;
   justify-content: start;
@@ -76,17 +79,17 @@
   .hero {
     padding-inline: var(--gap);
   }
-  .hero-image {
+  .hero__image {
     margin-inline: calc(var(--gap) * -1);
   }
-  .hero-card {
+  .hero__card {
     position: relative;
     z-index: 1;
     margin-block-start: -32px;
     margin-inline-start: calc(var(--gap) * -1);
     margin-inline-end: 30px;
   }
-  .hero-card--eyebrow {
+  .hero__eyebrow {
     font-size: var(--f7);
   }
 }
@@ -97,20 +100,20 @@
 @media (min-width: 768.01px) {
   .hero {
     position: relative;
+    padding-inline: var(--gap);
     display: grid;
     align-items: center;
     grid-template-columns: repeat(12, 1fr);
     gap: var(--gap);
-    margin-inline: var(--gap);
   }
 
-  .hero-image {
+  .hero__image {
     grid-column: 4 / 13;
     grid-row: 1;
     line-height: 0;
   }
 
-  .hero-card {
+  .hero__card {
     grid-column: 1 / 5;
     grid-row: 1;
     height: fit-content;
@@ -118,10 +121,10 @@
     margin-inline: calc(var(--gap) * -1);
   }
 
-  .hero-video-trigger {
+  .hero__video-trigger {
     position: absolute;
     inset-block-end: 0;
-    inset-inline-end: 0;
+    inset-inline-end: var(--gap);
     background: #fff;
   }
 }
