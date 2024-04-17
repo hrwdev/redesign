@@ -10,8 +10,8 @@
   font-weight: bold;
 }
 
-.carousel:not(.is-active) .splide__list {
-  display: grid !important;
+.carousel.is-initialized:not(.is-active) .splide__list {
+  display: grid;
   grid-auto-flow: column;
   grid-auto-columns: 1fr;
 }
@@ -67,8 +67,6 @@
   background: var(--blue);
 }
 
-@media (min-width: 768.01px) {
-  .splide__arrows {
-    display: none;
-  }
+.splide:not(.is-active) .splide__arrows {
+  display: none;
 }
