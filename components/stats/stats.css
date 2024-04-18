@@ -11,7 +11,8 @@
 }
 
 .stat__figure {
-  font-size: var(--f2);
+  font-size: var(--f3);
+  font-weight: bold;
   line-height: 1;
   margin-block-start: -0.2em;
   /* animation effects on .is-seen */
@@ -39,9 +40,8 @@
 }
 
 .stat:nth-child(4) .stat__figure {
+  transition-delay: 2.8s;
   bottom: 0;
-  font-weight: bold;
-  transition-delay: 2.5s;
 }
 
 .stat__description {

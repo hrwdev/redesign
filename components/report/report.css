@@ -106,6 +106,8 @@
   }
   .report__button[aria-expanded="true"] .report__button-icon:after {
     display: block;
-    content: "x";
+    content: "\00D7";
+    font-size: 1rem;
+    margin-top: -0.1em;
   }
 }
