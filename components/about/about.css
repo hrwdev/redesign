@@ -2,10 +2,12 @@
   padding: 1rem var(--gap);
 }
 
-.about__image {
+.about__image img {
+  width: 100%;
 }
 
 .about__card {
+  container-type: inline-size;
   display: flex;
   flex-direction: column;
   gap: 1em;
@@ -22,7 +24,12 @@
   line-height: 1.5;
 }
 
-@media (min-width: 480.01px) {
+.about .stats {
+  border-block-start: 1px solid var(--black);
+  padding-block-start:  var(--gap);
+}
+
+@media (min-width: 768.01px) {
   .about {
     position: relative;
     display: grid;
