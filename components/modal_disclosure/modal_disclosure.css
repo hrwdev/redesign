@@ -6,7 +6,7 @@
   align-items: center;
   justify-content: space-between;
   padding-block: 12px;
-  padding-inline: 12px;
+  padding-inline: var(--gap);
   font-weight: bold;
   line-height: 1.15;
   list-style: none;
