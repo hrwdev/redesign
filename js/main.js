@@ -10,6 +10,7 @@ const subdir = (window.location.pathname.startsWith('/redesign'))
 // custom "componentsLoaded" event.
 Promise.all([
   /* @create_component.sh insertion point */
+  loadComponent('video_horizontal'),
   loadComponent('stats'),
   loadComponent('strip'),
   loadComponent('section_header'),

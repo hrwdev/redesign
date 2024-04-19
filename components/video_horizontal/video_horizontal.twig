@@ -1,0 +1,45 @@
+<div class="video-horizontal" data-type="{{ type }}" id="{{ id }}">
+
+  <div class="video__player" id="{{ type }}-{{ id }}">
+    {% if type == "youtube" %}
+      {# The .video__container element will be replaced by the YouTube iframe. #}
+    {% endif %}
+    {% if type == "html5" %}
+      <video
+        id="video-{{ id }}"
+        data-matomo-title="{{ title }}"
+        controls
+        playsinline
+        preload="none"
+      >
+        {% for item in sources %}
+          <source
+            src="{{ item.src }}"
+            type="{{ item.type }}"
+            {% if item.media %} media="{{ item.media }}" {% endif %}
+            {% if item.adaptive %} data-adaptive="{{ item.adaptive }}" {% endif %}
+          />
+        {% endfor %}
+      </video>
+    {% endif %}
+  </div>
+
+  <div class="video__poster">
+    {{ image }}
+    <button class="video__info" aria-controls="video-{{ id }}">
+      <div class="video__icon"><span class="sr-only">Play</span></div>
+      <div class="video__title">
+        {{ title }}
+      </div>
+    </button>
+  </div>
+
+  {% if text_description %}
+    {% include '@components/modal_disclosure/modal_disclosure.twig' with {
+      id: 'text-description-' ~ id,
+      title: 'Read a text description of this video',
+      body: text_description,
+
+    } %}
+  {% endif %}
+</div>
