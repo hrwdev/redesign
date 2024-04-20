@@ -11,6 +11,7 @@ const subdir = (window.location.pathname.startsWith('/redesign'))
 Promise.all([
   /* @create_component.sh insertion point */
   loadComponent('video_horizontal'),
+  loadComponent('videos'),
   loadComponent('stats'),
   loadComponent('strip'),
   loadComponent('section_header'),

@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <title>Component: video_horizontal</title>
+  <title>Component: videos</title>
   <meta name="robots" content="noindex, nofollow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <link rel="shortcut icon" href="data:,"/>
@@ -20,8 +20,7 @@
 <script>
   document.addEventListener('componentsLoaded', () => {
     // Show component with default variables
-    // appendToMain(renderTwig('video_horizontal', 'html5'));
-    appendToMain(renderTwig('video_horizontal', 'youtube'));
+    appendToMain(renderTwig('videos'));
 
     // Fire a custom 'twigRendered' event, so that component JS
     // can run after the components are built.
