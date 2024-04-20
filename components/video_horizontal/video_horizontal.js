@@ -8,10 +8,12 @@ document.addEventListener('twigRendered', (ev) => {
     switch (type) {
       case 'html5':
         video = new HrwHtml5VideoElement(element);
+        video.init();
         break;
       case 'youtube':
-        loadYoutubeIframePlayerAPI();
+        // loadYoutubeIframePlayerAPI();
         video = new HrwYoutubeVideoElement(element);
+        video.init();
         break;
       default:
         return;
@@ -30,13 +32,13 @@ document.addEventListener('twigRendered', (ev) => {
  * @return {void}
  */
 function loadYoutubeIframePlayerAPI() {
-  if (!document.isYoutubeIframePlayerAPILoaded) {
-    const tag = document.createElement('script');
-    tag.src = "https://www.youtube.com/iframe_api";
-    const firstScriptTag = document.getElementsByTagName('script')[0];
-    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-    document.isYoutubeIframePlayerAPILoaded = true;
-  }
+  // if (!document.isYoutubeIframePlayerAPILoaded) {
+  //   const tag = document.createElement('script');
+  //   tag.src = "https://www.youtube.com/iframe_api";
+  //   const firstScriptTag = document.getElementsByTagName('script')[0];
+  //   firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+  //   document.isYoutubeIframePlayerAPILoaded = true;
+  // }
 }
 
 
