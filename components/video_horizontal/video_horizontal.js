@@ -131,7 +131,6 @@ class HrwYoutubeVideoElement extends HrwVideoElement {
         videoId: this.videoId,
         playerVars: {
           playsinline: 1,
-          autoplay: 1,
           rel: 0,
         },
         events: {

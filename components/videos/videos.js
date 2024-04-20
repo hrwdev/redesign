@@ -21,6 +21,7 @@ document.addEventListener('twigRendered', (ev) => {
 
         // Otherwise, it's a play button.
         if (button.classList.contains('icon-play')) {
+          document.video_horizontal[targetVideoId].play();
           // We need to determine if we need to switch the active video.
           if (targetVideoId !== activeVideoId) {
             // Pause the active video and switch to the target video.
@@ -28,7 +29,6 @@ document.addEventListener('twigRendered', (ev) => {
             activeVideo.classList.remove('is-active');
             targetVideo.classList.add('is-active');
           }
-          document.video_horizontal[targetVideoId].play();
         }
       });
     });
