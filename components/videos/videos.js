@@ -16,16 +16,16 @@ document.addEventListener('twigRendered', (ev) => {
 
         // A pause button will always target the active video.
         if (button.classList.contains('icon-pause')) {
-          document.video_horizontal[targetVideoId].pause();
+          Drupal.hrwVideo[targetVideoId].pause();
         }
 
         // Otherwise, it's a play button.
         if (button.classList.contains('icon-play')) {
-          document.video_horizontal[targetVideoId].play();
+          Drupal.hrwVideo[targetVideoId].play();
           // We need to determine if we need to switch the active video.
           if (targetVideoId !== activeVideoId) {
             // Pause the active video and switch to the target video.
-            document.video_horizontal[activeVideoId].pause();
+            Drupal.hrwVideo[activeVideoId].pause();
             activeVideo.classList.remove('is-active');
             targetVideo.classList.add('is-active');
           }

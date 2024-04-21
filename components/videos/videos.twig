@@ -11,7 +11,7 @@
     {% endif %}
     {% for item in videos %}
       <button class="videos__item icon-play" aria-controls="video-{{ item.id }}">
-        <div class="videos__item-icon"><span class="videos__item-icon-label sr-only">Play video</span></div>
+        <div class="videos__item-icon"><span class="icon-label sr-only">Play video</span></div>
         <div class="videos__item-title">{{ item.title }}</div>
         <div class="videos__item-duration">{{ item.duration }}</div>
       </button>

@@ -1,5 +1,6 @@
-// Initialize a global for Twig template variables.
+// Initialize globals for Twig template variables and Drupal.
 vars = {};
+Drupal = {};
 
 // Determine if the root directory is a subdirectory.
 const subdir = (window.location.pathname.startsWith('/redesign'))
@@ -12,6 +13,7 @@ Promise.all([
   /* @create_component.sh insertion point */
   loadComponent('site_header'),
   loadComponent('video_horizontal'),
+  loadComponent('video_vertical'),
   loadComponent('videos'),
   loadComponent('stats'),
   loadComponent('strip'),

@@ -1,4 +1,4 @@
-document.video_horizontal = document.video_horizontal || {};
+Drupal.hrwVideo = Drupal.hrwVideo || {};
 
 document.addEventListener('twigRendered', (ev) => {
   document.querySelectorAll('.video-horizontal').forEach((element) => {
@@ -7,99 +7,76 @@ document.addEventListener('twigRendered', (ev) => {
     let video;
     switch (type) {
       case 'html5':
-        video = new HrwHtml5VideoElement(element);
+        video = new HrwHtml5Video(element);
         video.init();
         break;
       case 'youtube':
         // loadYoutubeIframePlayerAPI();
-        video = new HrwYoutubeVideoElement(element);
+        video = new HrwYoutubeVideoHorizontal(element);
         video.init();
         break;
       default:
         return;
     }
-    document.video_horizontal[videoId] = video;
-    const posterButton = element.querySelector('button');
-    posterButton.addEventListener('click', (ev) => {
-      video.play();
-    });
+    Drupal.hrwVideo[videoId] = video;
   });
 });
 
-/**
- * Loads the YouTube IFrame Player API asynchronously if it is not already loaded.
- *
- * @return {void}
- */
-function loadYoutubeIframePlayerAPI() {
-  // if (!document.isYoutubeIframePlayerAPILoaded) {
-  //   const tag = document.createElement('script');
-  //   tag.src = "https://www.youtube.com/iframe_api";
-  //   const firstScriptTag = document.getElementsByTagName('script')[0];
-  //   firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-  //   document.isYoutubeIframePlayerAPILoaded = true;
-  // }
-}
-
-
-class HrwVideoElement {
-
-  isInitialized = false;
+class HrwVideo {
+  element;
+  orientation;
+  videoId;
+  videoElement;
+  poster;
+  externalButton;
 
   constructor(element) {
     if (!(element instanceof HTMLElement)) {
       throw new Error('Invalid argument: "element" must be an instance of HTMLElement.');
     }
     this.element = element;
+    this.orientation = element.getAttribute('data-orientation');
     this.videoId = element.getAttribute('data-id');
     this.poster = this.element.querySelector('.video__poster');
     this.externalButton = document.querySelector(`[aria-controls="video-${this.videoId}"]`);
   }
 
-  init() {
-    this.isInitialized = true;
-  }
+  init() {}
 
-  play() {
-    if (!this.isInitialized) {
-      this.init();
-    }
-    if (this.poster) {
-      this.poster.style.display = 'none';
-    }
-  }
+  play() {}
 
   pause() {}
 
   toggleToPauseButton(button) {
     button.classList.add('icon-pause');
     button.classList.remove('icon-play');
-    button.querySelector('.videos__item-icon-label').innerText = 'Pause video';
+    button.querySelector('.icon-label').innerText = 'Pause video';
   }
 
   toggleToPlayButton(button) {
     button.classList.add('icon-play');
     button.classList.remove('icon-pause');
-    button.querySelector('.videos__item-icon-label').innerText = 'Play video';
+    button.querySelector('.icon-label').innerText = 'Play video';
   }
 }
 
-class HrwHtml5VideoElement extends HrwVideoElement {
+class HrwHtml5Video extends HrwVideo {
   constructor(element) {
     super(element);
-    this.video = this.element.querySelector('video');
+    this.videoElement = this.element.querySelector('video');
+    this.poster.addEventListener('click', (ev) => this.play());
   }
 
   init() {
     super.init();
     if (this.externalButton) {
-      this.video.addEventListener('play', () => {
+      this.videoElement.addEventListener('play', () => {
         this.toggleToPauseButton(this.externalButton);
       });
-      this.video.addEventListener('pause', () => {
+      this.videoElement.addEventListener('pause', () => {
         this.toggleToPlayButton(this.externalButton);
       });
-      this.video.addEventListener('ended', () => {
+      this.videoElement.addEventListener('ended', () => {
         this.toggleToPlayButton(this.externalButton);
         this.poster.style.display = 'block';
       });
@@ -108,56 +85,30 @@ class HrwHtml5VideoElement extends HrwVideoElement {
 
   play() {
     super.play();
-    this.video.play();
+    this.videoElement.play();
+    if (this.poster) {
+      this.poster.style.display = 'none';
+    }
   }
 
   pause() {
-    this.video.pause();
+    this.videoElement.pause();
   }
 }
 
-class HrwYoutubeVideoElement extends HrwVideoElement {
-  player;
-  iframe;
+class HrwYoutubeVideo extends HrwVideo {
+
+  defaultOptions = {};
+
   constructor(element) {
       super(element);
-      this.iframe = this.element.querySelector('.video__player');
+      this.videoElement = this.element.querySelector('.video__player');
   }
 
   init() {
     super.init();
     if (!this.player) {
-      this.player = new YT.Player(this.iframe, {
-        videoId: this.videoId,
-        playerVars: {
-          playsinline: 1,
-          rel: 0,
-        },
-        events: {
-          onStateChange: (event) => {
-            // Toggle play/pause buttons that may be associated with the video.
-            const externalButton = document.querySelector(`[aria-controls="video-${this.videoId}"]`);
-            switch (event.data) {
-              case 1: // playing
-                if (externalButton) {
-                  this.toggleToPauseButton(externalButton);
-                }
-                break;
-              case 2: // paused
-                if (externalButton) {
-                  this.toggleToPlayButton(externalButton);
-                }
-                break;
-              case 0: // ended
-                if (externalButton) {
-                  this.toggleToPlayButton(externalButton);
-                }
-                this.poster.style.display = 'block';
-                break;
-            }
-          }
-        }
-      });
+      this.player = new YT.Player(this.videoElement, this.playerOptions());
     }
   }
 
@@ -173,5 +124,57 @@ class HrwYoutubeVideoElement extends HrwVideoElement {
       this.player.pauseVideo();
     }
   }
+
+  playerOptions() {}
 }
 
+class HrwYoutubeVideoHorizontal extends HrwYoutubeVideo {
+
+  constructor(element) {
+    super(element);
+    this.poster.addEventListener('click', (ev) => this.play());
+  }
+
+  playerOptions() {
+    return {
+      videoId: this.videoId,
+      width: 640,
+      height: 360,
+      playerVars: {
+        playsinline: 1,
+        rel: 0,
+      },
+      events: {
+        onStateChange: (event) => {
+          // Toggle play/pause buttons that may be associated with the video.
+          const externalButton = document.querySelector(`[aria-controls="video-${this.videoId}"]`);
+          switch (event.data) {
+            case 1: // playing
+              if (externalButton) {
+                this.toggleToPauseButton(externalButton);
+              }
+              break;
+            case 2: // paused
+              if (externalButton) {
+                this.toggleToPlayButton(externalButton);
+              }
+              break;
+            case 0: // ended
+              if (externalButton) {
+                this.toggleToPlayButton(externalButton);
+              }
+              this.poster.style.display = 'block';
+              break;
+          }
+        }
+      }
+    }
+  }
+
+  play() {
+    super.play();
+    if (this.poster) {
+      this.poster.style.display = 'none';
+    }
+  }
+}
