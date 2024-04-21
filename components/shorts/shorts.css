@@ -1,0 +1,22 @@
+.shorts {
+  padding: var(--gap);
+}
+
+
+/**
+ * Mobile only
+ */
+@media (max-width: 768px) {
+  .shorts .video {
+    max-width: min(calc(100vw - (var(--gap) * 3)), 280px); /* Ensures that part of the next slide is always visible in the carousel */
+  }
+}
+
+/**
+ * Desktop only
+ */
+@media (min-width: 768.01px) {
+  .shorts .video {
+    width: calc((1440px - (var(--gap) * 5)) / 4); /* Fit 4 items in 1440px screen, with gap/padding */
+  }
+}

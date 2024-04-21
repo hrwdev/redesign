@@ -46,6 +46,14 @@
       ]
     }));
     appendToMain(renderTwig('videos'));
+    appendToMain(renderTwig('shorts', {
+      items: [
+        renderTwig('video_vertical'),
+        renderTwig('video_vertical', 'youtube2'),
+        renderTwig('video_vertical', 'youtube3'),
+        renderTwig('video_vertical', 'youtube4'),
+      ]
+    }));
 
     // Fire a custom 'twigRendered' event, so that component JS
     // can run after the components are built.
