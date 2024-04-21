@@ -1,0 +1,46 @@
+.video-vertical {
+  position: relative;
+}
+
+.video-vertical .video__player {
+  max-width: 360px;
+  height: 100%;
+  max-height: 100vh;
+  aspect-ratio: 9 / 16;
+}
+
+.video-vertical .video__container video {
+  width: auto;
+  height: 100%;
+  aspect-ratio: 9 / 16;
+}
+
+.video-vertical .video__poster {
+  width: auto;
+  height: 100%;
+  aspect-ratio: 9 / 16;
+}
+.video-vertical .video__poster:focus,
+.video-vertical .video__poster:hover {
+  opacity: 0;
+}
+
+.video__poster img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+.video-vertical .video__info {
+  width: auto;
+  height: 100%;
+  aspect-ratio: 9 / 16;
+  background: linear-gradient(to bottom, black 15%, transparent);
+  justify-content: start;
+}
+
+.video__icon {
+  width: 36px;
+  aspect-ratio: 1 / 1;
+  background: url(../../icons/play.svg);
+}
