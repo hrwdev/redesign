@@ -22,18 +22,6 @@
   font-size: var(--f7);
 }
 
-.hero-breaking .hero__eyebrow {
-  border-bottom-color: var(--red);
-}
-
-.hero-breaking .hero__eyebrow .inner {
-  border: 1.5px solid var(--red);
-  border-bottom: 0;
-  padding-inline: 0.5rem;
-  color: var(--red);
-  text-transform: uppercase;
-}
-
 .hero__date {
   font-size: var(--f10);
 }
@@ -126,5 +114,35 @@
     inset-block-end: 0;
     inset-inline-end: var(--gap);
     background: #fff;
+  }
+}
+
+
+/**
+ * "Breaking" variant
+ */
+.hero-breaking .hero__eyebrow {
+  border-bottom-color: var(--red);
+}
+
+.hero-breaking .hero__eyebrow .inner {
+  border: 1.5px solid var(--red);
+  border-bottom: 0;
+  padding-inline: 0.5rem;
+  color: var(--red);
+  text-transform: uppercase;
+}
+
+
+/**
+ * "Reverse" variant
+ */
+@media (min-width: 768.01px) {
+  .hero-reverse .hero__image {
+    grid-column: 1 / 10;
+  }
+
+  .hero-reverse .hero__card {
+    grid-column: 9 / 13;
   }
 }

@@ -1,4 +1,4 @@
-<div class="hero {% if is_breaking %}hero-breaking{% endif %}">
+<div class="hero {% if variant %}hero-{{ variant }}{% endif %}">
   <div class='hero__image'>
     <a href="#">{{ image }}</a>
   </div>
@@ -6,7 +6,9 @@
     {% if eyebrow %}
       <div class='hero__eyebrow'><span class="inner">{{ eyebrow }}</span></div>
     {% endif %}
-    <div class='hero__date'>{{ date }}</div>
+    {% if date %}
+      <div class='hero__date'>{{ date }}</div>
+    {% endif %}
     <h2 class='hero__headline'>
       <a href="#">
         {{ headline }}

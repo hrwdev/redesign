@@ -1,6 +1,6 @@
 vars.hero = {
   default: {
-    is_breaking: false,
+    variant: "",
     image: "<img src='https://www.hrw.org/sites/default/files/styles/embed_xxl/public/media_2024/03/202403lgbt_videothumbnail_mex.jpg' width='2250' height='1264'/>",
     eyebrow: "News Release",
     date: "April 1, 2024",
@@ -15,7 +15,7 @@ vars.hero = {
     ],
   },
   breaking: {
-    is_breaking: true,
+    variant: "breaking",
     eyebrow: "Breaking News",
   },
   es: {
@@ -23,5 +23,25 @@ vars.hero = {
     date: "1 de abril de 2024\n",
     headline: "México: Guanajuato debería reconocer legalmente las identidades trans ",
     body: "<p>Las personas trans en el estado mexicano de Guanajuato sufren discriminación en los ámbitos económico, laboral y de salud, así como importantes impedimentos legales, porque el estado no cuenta con un proceso para emitir documentos de identidad acordes con su género, señaló Human Rights Watch en un documental difundido hoy.</p>",
+  },
+  reverse: {
+    variant: "reverse",
+    eyebrow: "Featured Investigation",
+    date: "",
+    headline: "Iran: Security Forces Rape, Torture, Detainees",
+    image: '<img src="https://www.hrw.org/sites/default/files/media_2024/04/202404mena_iran_detainee_representation.jpg" width="4000" height="2697" alt="Silhouette of a woman (representation)" loading="lazy">',
+    body: "",
+    package: "",
+    links: [],
+  },
+  reverse_ar: {
+    variant: "reverse",
+    eyebrow: "أبريل/نيسان 22, 2024",
+    date: "",
+    headline: "إيران: قوات الأمن تغتصب محتجزات ومحتجزين وتعذّبهم",
+    image: '<img src="https://www.hrw.org/sites/default/files/media_2024/04/202404mena_iran_detainee_representation.jpg" width="4000" height="2697" alt="Silhouette of a woman (representation)" loading="lazy">',
+    body: "",
+    package: "",
+    links: [],
   },
 };

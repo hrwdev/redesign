@@ -65,6 +65,9 @@
         renderTwig('video_vertical', 'ar4'),
       ]
     }));
+    appendToMain(renderTwig('hero', 'reverse_ar', {
+      video_widget: ""
+    }));
 
     // Fire a custom 'twigRendered' event, so that component JS
     // can run after the components are built.
