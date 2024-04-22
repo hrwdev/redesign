@@ -13,6 +13,10 @@
   font-family: var(--font-serif);
 }
 
+.section-header a {
+  color: var(--blue);
+}
+
 /**
  * Mobile only
  */
