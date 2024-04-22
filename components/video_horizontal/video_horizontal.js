@@ -78,7 +78,7 @@ class HrwHtml5Video extends HrwVideo {
       });
       this.videoElement.addEventListener('ended', () => {
         this.toggleToPlayButton(this.externalButton);
-        this.poster.style.display = 'block';
+        this.element.classList.add('is-showing-poster');
       });
     }
   }
@@ -87,7 +87,7 @@ class HrwHtml5Video extends HrwVideo {
     super.play();
     this.videoElement.play();
     if (this.poster) {
-      this.poster.style.display = 'none';
+      this.element.classList.remove('is-showing-poster');
     }
   }
 
@@ -116,6 +116,7 @@ class HrwYoutubeVideo extends HrwVideo {
     super.play();
     if (this.player && this.player.playVideo) {
       this.player.playVideo();
+      this.element.classList.remove('is-showing-poster');
     }
   }
 
@@ -164,6 +165,7 @@ class HrwYoutubeVideoHorizontal extends HrwYoutubeVideo {
                 this.toggleToPlayButton(externalButton);
               }
               this.poster.style.display = 'block';
+              this.element.classList.add('is-showing-poster');
               break;
           }
         }
@@ -173,8 +175,5 @@ class HrwYoutubeVideoHorizontal extends HrwYoutubeVideo {
 
   play() {
     super.play();
-    if (this.poster) {
-      this.poster.style.display = 'none';
-    }
   }
 }

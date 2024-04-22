@@ -1,4 +1,4 @@
-<div class="video-horizontal video" data-orientation="horizontal" data-type="{{ type }}" data-id="{{ id }}" id="video-{{ id }}">
+<div class="video-horizontal video is-showing-poster" data-orientation="horizontal" data-type="{{ type }}" data-id="{{ id }}" id="video-{{ id }}">
 
   <div class="video__player" id="video-{{ type }}-{{ id }}">
 
@@ -25,15 +25,15 @@
     {% endif %}
   </div>
 
-  <div class="video__poster">
+  <button class="video__poster" aria-controls="video-{{ type }}-{{ id }}">
     {{ image }}
-    <button class="video__info" aria-controls="video-{{ type }}-{{ id }}">
+    <div class="video__info">
       <div class="video__icon"><span class="sr-only">Play</span></div>
       <div class="video__title">
         {{ title }}
       </div>
-    </button>
-  </div>
+    </div>
+  </button>
 
   {% if text_description %}
     {% include '@components/modal_disclosure/modal_disclosure.twig' with {

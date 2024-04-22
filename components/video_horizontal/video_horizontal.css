@@ -9,15 +9,25 @@
   position: relative;
 }
 
-.video__container video {
-  width: 100%;
-  aspect-ratio: 16 / 9;
+.video.is-showing-poster .video__player {
+  display: none;
+}
+
+.video:not(.is-showing-poster) .video__player {
+  display: block;
+}
+
+.video.is-showing-poster .video__poster {
+  display: block;
+}
+
+.video:not(.is-showing-poster) .video__poster {
+  display: none;
 }
 
 .video__poster {
   width: 100%;
   aspect-ratio: 16 / 9;
-  position: absolute;
   inset-block-start: 0;
   inset-inline-start: 0;
   overflow: hidden;
@@ -52,4 +62,12 @@
   width: 36px;
   aspect-ratio: 1 / 1;
   background: url(../../icons/play.svg);
+}
+
+.video__poster:focus {
+  box-shadow: none !important;
+}
+
+.video__poster:focus .video__icon {
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px #f6691c;
 }
