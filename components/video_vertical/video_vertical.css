@@ -20,9 +20,9 @@
   height: 100%;
   aspect-ratio: 9 / 16;
 }
-.video-vertical .video__poster:focus,
-.video-vertical .video__poster:hover {
-  opacity: 0;
+
+.video-vertical:hover .video__poster {
+  display: none;
 }
 
 .video__poster img {
