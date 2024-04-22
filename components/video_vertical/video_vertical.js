@@ -28,17 +28,22 @@ class HrwYoutubeVideoVertical extends HrwYoutubeVideo {
     super(element);
     this.element.addEventListener('mouseover', (ev) => this.play());
     this.element.addEventListener('mouseout', (ev) => this.pause());
+    this.poster.addEventListener('click', (ev) => {
+      this.play();
+      this.player.unMute();
+    });
   }
 
   playerOptions() {
     return {
       videoId: this.videoId,
-      width: 360,
-      height: 640,
+      width: 270,
+      height: 480,
       playerVars: {
         playsinline: 1,
         rel: 0,
-        controls: 0,
+        disablePictureInPicture: 1,
+        controls: 1,
         mute: 1,
       },
     }

@@ -43,7 +43,12 @@ class HrwVideo {
 
   init() {}
 
-  play() {}
+  play() {
+    // Pause all other videos.
+    for (const hrwVideo of Object.values(Drupal.hrwVideo)) {
+      hrwVideo.pause();
+    }
+  }
 
   pause() {}
 

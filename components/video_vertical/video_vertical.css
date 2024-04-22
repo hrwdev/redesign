@@ -1,5 +1,6 @@
 .video-vertical {
   position: relative;
+  min-width: 280px;
 }
 
 .video-vertical .video__player {
@@ -9,15 +10,9 @@
   aspect-ratio: 9 / 16;
 }
 
-.video-vertical .video__container video {
-  width: auto;
-  height: 100%;
-  aspect-ratio: 9 / 16;
-}
-
 .video-vertical .video__poster {
-  width: auto;
-  height: 100%;
+  width: 100%;
+  height: auto;
   aspect-ratio: 9 / 16;
 }
 
