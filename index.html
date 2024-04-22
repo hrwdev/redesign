@@ -11,6 +11,12 @@
   <link rel="stylesheet" href="./css/reset.css" />
   <link rel='stylesheet' href="./css/main.css" />
   <link rel="stylesheet" href="./fonts/fonts-edited.css" />
+
+  <style>
+    .trending + .hero-brand {
+      margin-block-start: calc(var(--gap) * -1);
+    }
+  </style>
 </head>
 <body>
 <main class="util-block-spacing">
@@ -23,6 +29,7 @@
 <script>
   document.addEventListener('componentsLoaded', () => {
     appendToMain(renderTwig('site_header'));
+    appendToMain(renderTwig('trending'));
     appendToMain(renderTwig('hero_brand', 'en', {
       video_widget: renderTwig('modal_disclosure')
     }));
@@ -34,7 +41,6 @@
         renderTwig('card_minimal', 'en3'),
       ]
     }));
-    appendToMain(renderTwig('trending'));
     appendToMain(renderTwig('about'));
     appendToMain(renderTwig('spotlight'));
     appendToMain(renderTwig('reports', {
@@ -53,6 +59,9 @@
         renderTwig('video_vertical', 'youtube3'),
         renderTwig('video_vertical', 'youtube4'),
       ]
+    }));
+    appendToMain(renderTwig('hero', 'reverse', {
+      video_widget: ''
     }));
 
     // Fire a custom 'twigRendered' event, so that component JS
