@@ -38,3 +38,18 @@ Promise.all([
   const event = new Event('componentsLoaded');
   document.dispatchEvent(event);
 });
+
+// Detect whether the keyboard or mouse is currently being used.
+document.addEventListener('keyup', function (event) {
+  if (event.code === 'Tab') {
+    document.querySelector('body').classList.add('is-keyboard-user');
+    // Ensure spacing between the activated element and the bottom of the viewport.
+    if (window.innerHeight - document.activeElement.getBoundingClientRect().bottom < 100) {
+      window.scroll(0, window.scrollY + 150);
+    }
+  }
+});
+document.addEventListener('mousedown', function (event) {
+  document.querySelector('body').classList.remove('is-keyboard-user');
+  document.querySelector('body').classList.add('is-mouse-user');
+});
