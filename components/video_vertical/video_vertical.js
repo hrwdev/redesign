@@ -46,6 +46,11 @@ class HrwYoutubeVideoVertical extends HrwYoutubeVideo {
         controls: 1,
         mute: 1,
       },
+      events: {
+        onStateChange: (event) => {
+          console.log(event);
+        }
+      }
     }
   }
 }
