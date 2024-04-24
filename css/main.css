@@ -31,8 +31,7 @@
   --f10: 0.75rem;
 }
 
-.is-keyboard-user:focus {
-  outline: none;
+.is-keyboard-user :focus {
   box-shadow: 0 0 0 2px #fff, 0 0 0 4px #f6691c;
 }
 
@@ -59,6 +58,16 @@ main {
 button {
   font-family: var(--font-sans), sans-serif;
   font-variant-numeric: lining-nums;
+}
+
+a {
+  display: inline-block;
+}
+
+p a {
+  display: inline;
+  color: var(--blue);
+  text-decoration: underline;
 }
 
 @media (min-width: 1440.01px) {
