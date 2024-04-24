@@ -1,12 +1,6 @@
 .carousel {
 }
 
-.splide.is-initialized:not(.is-active) .splide__list {
-  display: grid;
-  grid-auto-flow: column;
-  grid-auto-columns: 1fr;
-}
-
 .splide__track {
   margin-inline: calc(var(--gap) * -1); /* Lets slides break out of their container slightly (UX hint that there is horizontal content) */
 }
