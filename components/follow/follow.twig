@@ -1,0 +1,38 @@
+<div class="follow">
+
+  <h2 class="follow__title">{{ title }}</h2>
+
+  <form class="follow__subscribe">
+    <h3 class="follow__subscribe-title">{{ subscribe_title }}</h3>
+    <div class="follow__email">
+      <label class="follow__email-label" for="follow__email-input">
+        {{ subscribe_email_label }}
+      </label>
+      <input id="follow__email-input" type="email" name="email" />
+    </div>
+    {% include '@components/button/button.twig' with {
+      id: 'follow__email-submit',
+      class: 'button-primary button-text',
+      onclick: 'this.form.submit();',
+      label: subscribe_button_label,
+      show_label: true,
+    } %}
+  </form>
+
+  <div class="follow__social">
+    <h3 class="follow__social-title">{{ social_title }}</h3>
+    <ul class="follow__social-links">
+      {% for item in social_links %}
+        <li class="follow__social-link" data-name="{{ item.name }}">
+          <a href="{{ item.url }}" title="{{ item.name }}">
+            <span class="sr-only">{{ item.name }}</span>
+            <div class="follow__social-icon">
+              {{ item.icon }}
+            </div>
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+
+  </div>
+</div>
