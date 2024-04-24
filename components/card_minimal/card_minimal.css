@@ -4,9 +4,10 @@
   gap: 0.5rem;
 }
 
-.card-minimal h3 {
+.card-minimal .card__title {
   font-size: var(--f8);
   font-weight: bold;
+  line-height: 1.25;
 }
 
 .card-minimal .card__date {

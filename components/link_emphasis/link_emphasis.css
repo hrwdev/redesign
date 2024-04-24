@@ -2,7 +2,6 @@
   display: inline-block;
   color: var(--blue);
   font-weight: bold;
-  white-space: nowrap;
 }
 
 .link-emphasis::after {
