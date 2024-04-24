@@ -61,7 +61,7 @@ button {
 }
 
 a {
-  display: inline-block;
+  display: block;
 }
 
 p a {

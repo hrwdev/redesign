@@ -1,8 +1,8 @@
 .carousel {
 }
 
-.splide__track {
-  margin-inline: calc(var(--gap) * -1); /* Lets slides break out of their container slightly (UX hint that there is horizontal content) */
+.is-active .splide__track {
+  margin-inline: var(--gap-neg); /* Lets slides break out of their container slightly (UX hint that there is horizontal content) */
 }
 
 /**
