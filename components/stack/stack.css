@@ -1,0 +1,13 @@
+.stack {
+
+}
+
+.stack__title {
+  text-transform: uppercase;
+}
+
+.stack__list {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--gap) * 1.5);
+}

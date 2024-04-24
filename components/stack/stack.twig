@@ -1,0 +1,21 @@
+<section class="stack util-block-spacing">
+  {% if title %}
+    <{{ heading_level }} class="stack__title">
+      {% if url %}
+        {% include '@components/link_emphasis/link_emphasis.twig' with {
+          url: url,
+          text: title
+        } %}
+      {% else %}
+        {{ title }}
+      {% endif %}
+    </{{ heading_level }}>
+  {% endif %}
+  <ul class="stack__list">
+    {% for item in items %}
+      <li class="stack__item">
+        {{ item }}
+      </li>
+    {% endfor %}
+  </ul>
+</section>
