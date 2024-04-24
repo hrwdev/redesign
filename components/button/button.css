@@ -26,3 +26,14 @@
 .button-secondary:hover {
   background-color: var(--dark-orange);
 }
+
+.button-text {
+  display: inline-flex;
+  align-items: center;
+  padding-block: 0.75em;
+  padding-inline: 1.25em;
+  font-size: var(--f8);
+  font-weight: bold;
+  line-height: 1.15;
+  text-transform: uppercase;
+}
