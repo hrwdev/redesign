@@ -1,8 +1,17 @@
 <div class="card-minimal">
-  <h3 class="card__title">
-    <a href="{{ url }}">{{ title }}</a>
-  </h3>
-  <div class="card__date">
-    {{ date }}
-  </div>
+  <a href="{{ url }}">
+    {% if image %}
+      <div class="card__image">
+        {{ image }}
+      </div>
+    {% endif %}
+    <h3 class="card__title">
+      {{ title }}
+    </h3>
+  </a>
+  {% if date %}
+    <div class="card__date">
+      {{ date }}
+    </div>
+  {% endif %}
 </div>

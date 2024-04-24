@@ -21,6 +21,7 @@
   document.addEventListener('componentsLoaded', () => {
     // Show component with default variables
     appendToMain(renderTwig('card_minimal'));
+    appendToMain(renderTwig('card_minimal', 'image1'));
 
     // Fire a custom 'twigRendered' event, so that component JS
     // can run after the components are built.
