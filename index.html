@@ -19,7 +19,7 @@
   </style>
 </head>
 <body>
-<main class="util-block-spacing">
+<main class="util-block-spacing" style="gap: var(--gap2);">
 
 </main>
 <script src="./js/twig.min.js"></script>
@@ -64,6 +64,16 @@
       video_widget: ''
     }));
     appendToMain(renderTwig('follow'));
+    appendToMain(renderTwig('impact', {
+      items: [
+        renderTwig('card', 'impact1'),
+        renderTwig('card', 'impact2'),
+        renderTwig('card', 'impact3'),
+        renderTwig('card', 'impact4'),
+        renderTwig('card', 'impact5'),
+        renderTwig('card', 'impact6'),
+      ],
+    }));
 
     // Fire a custom 'twigRendered' event, so that component JS
     // can run after the components are built.

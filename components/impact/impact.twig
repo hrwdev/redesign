@@ -1,0 +1,17 @@
+<section class="impact">
+  <header class="impact__header util-block-spacing">
+    <h2 class="impact__title">{{ title }}</h2>
+    {{ body }}
+    {% if link_url %}
+      <div class="impact__link">
+        {% include "@components/link_emphasis/link_emphasis.twig" with {
+          url: link_url,
+          text: link_text
+        } %}
+      </div>
+    {% endif %}
+  </header>
+  <div class="impact__cards">
+    {% include "@components/carousel/carousel.twig" %}
+  </div>
+</section>

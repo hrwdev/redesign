@@ -1,0 +1,57 @@
+.impact {
+}
+
+.impact__title {
+  font-size: var(--f3);
+  font-weight: bold;
+}
+
+/**
+ * Mobile only (carousel)
+ */
+@media (max-width: 768px) {
+  .impact {
+    padding: var(--gap);
+  }
+
+  .impact__header {
+    padding-block-end: var(--gap);
+    border-block-end: 1.5px solid black;
+    margin-block-end: var(--gap);
+  }
+
+  .impact .splide__slide {
+    max-width: 85vw;
+  }
+}
+
+/**
+ * Desktop only
+ */
+@media (min-width: 768.01px) {
+  .impact {
+    display: grid;
+    grid-template-columns: 33.33% 66.67%;
+    align-items: start;
+  }
+
+  .impact__header {
+    position: sticky;
+    height: fit-content;
+    inset-block-start: var(--gap);
+    padding-inline: var(--gap);
+
+  }
+
+  .impact__cards {
+    padding-inline: var(--gap);
+    border-inline-start: 1px solid black;
+  }
+
+  .impact .splide:not(.is-active) .splide__list {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: var(--gap);
+    grid-auto-rows: auto;
+  }
+}
