@@ -3,6 +3,8 @@
   --font-serif: "Freight Text W01", Georgia, Cambria, "Times New Roman", Times, serif;
 
   --gap: 20px;
+  --gap2: 40px;
+  --gap-neg: -20px;
 
   --blue: #0071ce;
   --orange: #f6691c;
@@ -10,6 +12,7 @@
   --near-black: #202020;
   --white: #ffffff;
   --near-white: #f5f5f5;
+  --light-gray: #e5e5e5;
   --gray: #c8c8c8;
   --navy: #001f35;
   --red: #f00000;
