@@ -32,13 +32,28 @@
   background-image: url("../../icons/-.svg");
 }
 
+.modal-disclosure__iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+
+/**
+ * Mobile only
+ */
 @media (max-width: 768px) {
   .modal-disclosure .modal {
     display: block;
     position: relative;
     border: 0;
+    width: 100%;
   }
   .modal-disclosure .modal-header {
     display: none;
   }
+}
+
+/**
+ * Desktop only
+ */
+@media (min-width: 768.01px) {
 }
