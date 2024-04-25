@@ -1,7 +1,7 @@
 vars.hero = {
   default: {
     variant: "",
-    image: "<img src='https://www.hrw.org/sites/default/files/styles/embed_xxl/public/media_2024/03/202403lgbt_videothumbnail_mex.jpg' width='2250' height='1264'/>",
+    image: "<img alt='FPO' src='https://www.hrw.org/sites/default/files/styles/embed_xxl/public/media_2024/03/202403lgbt_videothumbnail_mex.jpg' width='2250' height='1264'/>",
     eyebrow: "News Release",
     date: "April 1, 2024",
     headline: "Mexico: Guanajuato Should Legally Recognize Trans Identities",

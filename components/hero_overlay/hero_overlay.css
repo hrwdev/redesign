@@ -1,5 +1,6 @@
 .hero-overlay {
   display: grid;
+  background-color: black;
 }
 
 .hero-overlay__image {
