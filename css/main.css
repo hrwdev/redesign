@@ -31,6 +31,18 @@
   --f10: 0.75rem;
 }
 
+@media (max-width: 768px) {
+  :root {
+    --f1: 2.333rem;
+    --f2: 2rem;
+    --f3: 1.75rem;
+    --f4: 1.666rem;
+    --f5: 1.333rem;
+    --f6: 1.25rem;
+    --f7: 1.125rem;
+  }
+}
+
 .is-keyboard-user :focus {
   box-shadow: 0 0 0 2px #fff, 0 0 0 4px #f6691c;
 }

@@ -11,3 +11,7 @@
   flex-direction: column;
   gap: calc(var(--gap) * 1.5);
 }
+
+.stack .link-emphasis {
+  white-space: normal; /* Some stack titles are too long for the potential small column width */
+}
