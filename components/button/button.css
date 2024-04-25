@@ -27,6 +27,16 @@
   background-color: var(--dark-orange);
 }
 
+.button-secondary-transparent {
+  background: transparent;
+  border: 1.5px solid var(--orange);
+  color: var(--orange);
+}
+
+.button-secondary-transparent:hover {
+  filter: brightness(150%);
+}
+
 .button-text {
   display: inline-flex;
   align-items: center;

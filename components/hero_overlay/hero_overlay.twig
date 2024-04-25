@@ -1,0 +1,31 @@
+<section class="hero-overlay util-full-bleed">
+
+  <div class="hero-overlay__image" style="background-image: url({{ image_url }});"></div>
+
+  <div class="hero-overlay__content">
+
+    {% block content %}
+
+      {% if title %}
+        <h2 class="hero-overlay__title">
+          {{ title }}
+        </h2>
+      {% endif %}
+
+      {% if body %}
+        <div class="hero-overlay__body">
+          {{ body }}
+        </div>
+      {% endif %}
+
+      {% if buttons %}
+        <div class="hero-overlay__buttons">
+          {% for item in buttons %}
+            {% include "@components/link_button/link_button.twig" with item %}
+          {% endfor %}
+        </div>
+      {% endif %}
+
+    {% endblock %}
+  </div>
+</section>
