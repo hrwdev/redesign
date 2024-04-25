@@ -5,7 +5,6 @@ document.addEventListener('twigRendered', (ev) => {
       rewind: true,
       padding: {right: 40}, // Allows peek into next slide
       focus: 0,
-      focusableNodes: '',
       mediaQuery: 'min',
     };
     // Override settings for RTL pages.
