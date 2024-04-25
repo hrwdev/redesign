@@ -1,0 +1,24 @@
+.site-footer {
+  margin-block-start: calc(var(--gap2) * -1);
+  background: var(--near-black);
+}
+@media (min-width: 768.01px) {
+  .site-footer .placeholder {
+    background: url('./site-footer-desktop.png');
+    background-size: contain;
+    width: 100%;
+    max-width: 1440px;
+    margin-inline: auto;
+    aspect-ratio: 1440 / 462;
+  }
+}
+
+@media (max-width: 768px) {
+  .site-footer .placeholder {
+    background: url('./site-footer-mobile.png');
+    background-size: contain;
+    width: 100%;
+    margin-inline: auto;
+    aspect-ratio: 375 / 738;
+  }
+}

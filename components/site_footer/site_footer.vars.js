@@ -1,4 +1,4 @@
-vars.site_header = {
+vars.site_footer = {
   default: {
   },
 };
