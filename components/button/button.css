@@ -40,10 +40,10 @@
 .button-text {
   display: inline-flex;
   align-items: center;
-  padding-block: 0.75em;
-  padding-inline: 1.25em;
+  min-height: 2.5rem;
+  padding-inline: 1.25rem;
   font-size: 14pt;
   font-weight: bold;
-  line-height: 1.15;
+  line-height: 1;
   text-transform: uppercase;
 }

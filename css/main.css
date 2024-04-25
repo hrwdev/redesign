@@ -82,6 +82,22 @@ p a {
   text-decoration: underline;
 }
 
+input[type="email"],
+input[type="text"] {
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+  height: 2.5rem;
+  padding-inline: 0.5rem;
+  font-size: var(--f8);
+  font-weight: bold;
+  box-shadow: inset 0 0 1px var(--black);
+}
+
+input:focus {
+  box-shadow: 0 0 0 2px #f6691c;
+}
+
 @media (min-width: 1440.01px) {
   .util-full-bleed {
     width: 100vw;
