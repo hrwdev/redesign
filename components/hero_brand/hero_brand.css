@@ -1,3 +1,7 @@
+.hero-brand {
+  background-color: var(--black);
+}
+
 .hero-brand__card {
   background: var(--black);
   color: var(--white);
@@ -27,6 +31,9 @@
     position: relative;
     z-index: 1;
     padding: var(--gap);
+    background: linear-gradient(to bottom, black 25%, transparent);
+    margin-bottom: -17rem;
+    padding-block-end: 11rem;
   }
   .hero-brand__image {
     position: relative;
