@@ -1,6 +1,6 @@
 .section-header {
   padding-block-end: 15px;
-  border-block-end: 1px solid var(--black);
+  border-block-end: 1.5px solid var(--black);
   margin-block-end: var(--gap);
 }
 

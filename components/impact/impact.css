@@ -45,7 +45,7 @@
 
   .impact__cards {
     padding-inline: var(--gap);
-    border-inline-start: 1px solid black;
+    border-inline-start: 1.5px solid black;
   }
 
   .impact .splide:not(.is-active) .splide__list {

@@ -62,7 +62,7 @@
   .follow__subscribe {
     justify-content: start;
     padding-block-end: var(--gap2);
-    border-block-end: 2px solid black;
+    border-block-end: 1.5px solid black;
   }
 
   .follow__subscribe-title,
@@ -102,7 +102,7 @@
   }
 
   .follow__subscribe {
-    border-inline-end: 2px solid black;
+    border-inline-end: 1.5px solid black;
   }
 
   .follow__email {
