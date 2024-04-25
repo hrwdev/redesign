@@ -1,4 +1,4 @@
-<div class="card card-{{ style }} card-{{ size }}" id="{{ id }}">
+<article class="card card-{{ style }} card-{{ size }}">
   <div class="card__image">
     <a href="{{ url }}">
       {{ image }}
@@ -6,11 +6,11 @@
   </div>
   <div class="card__body">
     {% if date or type %}
-    <div class="card__eyebrow">
-      {% if date %}<span class="card__date">{{ date }}</span>{% endif %}
-      {% if date and type %} | {% endif %}
-      {% if type %}<span class="card__type">{{ type }}</span>{% endif %}
-    </div>
+      <div class="card__eyebrow">
+        {% if date %}<span class="card__date">{{ date }}</span>{% endif %}
+        {% if date and type %} | {% endif %}
+        {% if type %}<span class="card__type">{{ type }}</span>{% endif %}
+      </div>
     {% endif %}
     <{{ heading_level }} class="card__title">
       <a href="{{ url }}">{{ title }}</a>
@@ -19,6 +19,10 @@
       {% set flair_type = (flair == 'Breaking News Statement') ? 'breaking' : 'default' %}
       <div class="card__flair flair--{{ flair_type }}">{{ flair }}</div>
     {% endif %}
-    {% if teaser %}<div class="card__teaser">{{ teaser }}</div>{% endif %}
+    {% if teaser %}
+      <div class="card__teaser">
+        {{ teaser }}
+      </div>
+    {% endif %}
   </div>
-</div>
+</article>

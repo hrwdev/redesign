@@ -2,6 +2,7 @@ document.addEventListener('twigRendered', (ev) => {
   document.querySelectorAll('.splide').forEach((element) => {
     let options = {
       drag: 'free',
+      snap: true,
       rewind: true,
       padding: {right: 40}, // Allows peek into next slide
       focus: 0,
