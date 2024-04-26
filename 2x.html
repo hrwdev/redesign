@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Homepage Redesign</title>
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script src=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js "></script>
+  <link href=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide-core.min.css " rel="stylesheet">
+  <link rel="shortcut icon" href="data:,"/>
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel='stylesheet' href="./css/main.css" />
+  <link rel="stylesheet" href="./fonts/fonts-edited.css" />
+
+  <style>
+    html {
+      font-size: 32px;
+    }
+    .trending + .hero-brand {
+      margin-block-start: calc(var(--gap) * -2);
+    }
+  </style>
+</head>
+<body>
+<main class="util-block-spacing" style="gap: var(--gap2);">
+
+</main>
+<script src="./js/twig.min.js"></script>
+<script src="./js/functions.js"></script>
+<script src="./js/main.js"></script>
+
+<script>
+  document.addEventListener('componentsLoaded', () => {
+    appendToMain(renderTwig('site_header'));
+    appendToMain(renderTwig('trending'));
+    appendToMain(renderTwig('hero', 'en', {
+      video_widget: renderTwig('modal_disclosure')
+    }));
+    appendToMain(renderTwig('strip', {
+      items: [
+        renderTwig('card_minimal'),
+        renderTwig('card_minimal', 'en1'),
+        renderTwig('card_minimal', 'en2'),
+        renderTwig('card_minimal', 'en3'),
+      ]
+    }));
+    appendToMain(renderTwig('about'));
+    appendToMain(renderTwig('spotlight'));
+    appendToMain(renderTwig('reports', {
+      items: [
+        renderTwig('report'),
+        renderTwig('report', 'en1'),
+        renderTwig('report', 'en2'),
+        renderTwig('report', 'en3'),
+      ]
+    }));
+    appendToMain(renderTwig('videos'));
+    appendToMain(renderTwig('shorts', {
+      items: [
+        renderTwig('video_vertical'),
+        renderTwig('video_vertical', 'youtube2'),
+        renderTwig('video_vertical', 'youtube3'),
+        renderTwig('video_vertical', 'youtube4'),
+      ]
+    }));
+    appendToMain(renderTwig('hero', 'reverse', {
+      video_widget: ''
+    }));
+    appendToMain(renderTwig('follow'));
+    appendToMain(renderTwig('impact', {
+      items: [
+        renderTwig('card', 'impact1'),
+        renderTwig('card', 'impact2'),
+        renderTwig('card', 'impact3'),
+        renderTwig('card', 'impact4'),
+        renderTwig('card', 'impact5'),
+        renderTwig('card', 'impact6'),
+      ],
+    }));
+    // Regions
+    appendToMain(renderTwig('strip', {
+      title: 'Regions',
+      options: '{"perPage": 1, "breakpoints": {"480": {"perPage": 2}, "768": {"perPage": 3}, "960": {"perPage": 4}}}',
+      items: [
+        renderTwig('stack', {
+          title: 'Africa',
+          items: [
+            renderTwig('card_minimal', 'image1'),
+            renderTwig('card_minimal', 'en'),
+            renderTwig('card_minimal', 'en2')
+          ]
+        }),
+        renderTwig('stack', {
+          title: 'Europe/Central Asia',
+          items: [
+            renderTwig('card_minimal', 'image2'),
+            renderTwig('card_minimal', 'en3'),
+            renderTwig('card_minimal', 'en4')
+          ]
+        }),
+        renderTwig('stack', {
+          title: 'Americas',
+          items: [
+            renderTwig('card_minimal', 'image3'),
+            renderTwig('card_minimal', 'en5'),
+            renderTwig('card_minimal', 'en6')
+          ]
+        }),
+        renderTwig('stack', {
+          title: 'United States',
+          items: [
+            renderTwig('card_minimal', 'image4'),
+            renderTwig('card_minimal', 'en7'),
+            renderTwig('card_minimal', 'en8')
+          ]
+        }),
+        renderTwig('stack', {
+          title: 'Asia',
+          items: [
+            renderTwig('card_minimal', 'image5'),
+            renderTwig('card_minimal', 'en9'),
+            renderTwig('card_minimal', 'en10')
+          ]
+        }),
+        renderTwig('stack', {
+          title: 'Middle East/North Africa',
+          items: [
+            renderTwig('card_minimal', 'image6'),
+            renderTwig('card_minimal', 'en11'),
+            renderTwig('card_minimal', 'en12')
+          ]
+        }),
+      ]
+    }));
+    // Topics
+    appendToMain(renderTwig('strip', {
+      title: 'Topics',
+      options: '{"perPage": 1, "breakpoints": {"480": {"perPage": 2}, "768": {"perPage": 3}, "960": {"perPage": 4}}}',
+      items: [
+        renderTwig('stack', {
+          title: 'Economic Justice and Rights',
+          items: [
+            renderTwig('card_minimal', 'image4'),
+            renderTwig('card_minimal', 'en7'),
+            renderTwig('card_minimal', 'en8')
+          ]
+        }),
+        renderTwig('stack', {
+          title: 'Disability Rights',
+          items: [
+            renderTwig('card_minimal', 'image5'),
+            renderTwig('card_minimal', 'en9'),
+            renderTwig('card_minimal', 'en10')
+          ]
+        }),
+        renderTwig('stack', {
+          title: 'Children\'s Rights',
+          items: [
+            renderTwig('card_minimal', 'image6'),
+            renderTwig('card_minimal', 'en11'),
+            renderTwig('card_minimal', 'en12')
+          ]
+        }),
+        renderTwig('stack', {
+          title: 'Arms',
+          items: [
+            renderTwig('card_minimal', 'image1'),
+            renderTwig('card_minimal', 'en'),
+            renderTwig('card_minimal', 'en2')
+          ]
+        }),
+        renderTwig('stack', {
+          title: 'Crisis and Conflict',
+          items: [
+            renderTwig('card_minimal', 'image2'),
+            renderTwig('card_minimal', 'en3'),
+            renderTwig('card_minimal', 'en4')
+          ]
+        }),
+        renderTwig('stack', {
+          title: 'Environment and Human Rights',
+          items: [
+            renderTwig('card_minimal', 'image3'),
+            renderTwig('card_minimal', 'en5'),
+            renderTwig('card_minimal', 'en6')
+          ]
+        }),
+        renderTwig('stack', {
+          title: 'International Justice',
+          items: [
+            renderTwig('card_minimal', 'image4'),
+            renderTwig('card_minimal', 'en7'),
+            renderTwig('card_minimal', 'en8')
+          ]
+        }),
+        renderTwig('stack', {
+          title: 'Free Speech',
+          items: [
+            renderTwig('card_minimal', 'image5'),
+            renderTwig('card_minimal', 'en9'),
+            renderTwig('card_minimal', 'en10')
+          ]
+        }),
+        renderTwig('stack', {
+          title: 'Refugees and Migrants',
+          items: [
+            renderTwig('card_minimal', 'image6'),
+            renderTwig('card_minimal', 'en11'),
+            renderTwig('card_minimal', 'en12')
+          ]
+        }),
+        renderTwig('stack', {
+          title: 'Health',
+          items: [
+            renderTwig('card_minimal', 'image1'),
+            renderTwig('card_minimal', 'en'),
+            renderTwig('card_minimal', 'en2')
+          ]
+        }),
+        renderTwig('stack', {
+          title: 'LGBT Rights',
+          items: [
+            renderTwig('card_minimal', 'image2'),
+            renderTwig('card_minimal', 'en3'),
+            renderTwig('card_minimal', 'en4')
+          ]
+        }),
+        renderTwig('stack', {
+          title: 'Rights of Older People',
+          items: [
+            renderTwig('card_minimal', 'image3'),
+            renderTwig('card_minimal', 'en5'),
+            renderTwig('card_minimal', 'en6')
+          ]
+        }),
+
+        renderTwig('stack', {
+          title: 'Women\'s Rights',
+          items: [
+            renderTwig('card_minimal', 'image4'),
+            renderTwig('card_minimal', 'en7'),
+            renderTwig('card_minimal', 'en8')
+          ]
+        }),
+        renderTwig('stack', {
+          title: 'Technology and Rights',
+          items: [
+            renderTwig('card_minimal', 'image5'),
+            renderTwig('card_minimal', 'en9'),
+            renderTwig('card_minimal', 'en10')
+          ]
+        }),
+        renderTwig('stack', {
+          title: 'United Nations',
+          items: [
+            renderTwig('card_minimal', 'image6'),
+            renderTwig('card_minimal', 'en11'),
+            renderTwig('card_minimal', 'en12')
+          ]
+        }),
+        renderTwig('stack', {
+          title: 'Terrorism / Counterterrorism',
+          items: [
+            renderTwig('card_minimal', 'image1'),
+            renderTwig('card_minimal', 'en'),
+            renderTwig('card_minimal', 'en2')
+          ]
+        }),
+        renderTwig('stack', {
+          title: 'Torture',
+          items: [
+            renderTwig('card_minimal', 'image2'),
+            renderTwig('card_minimal', 'en3'),
+            renderTwig('card_minimal', 'en4')
+          ]
+        }),
+      ]
+    }));
+    // Hero (footer)
+    appendToMain(renderTwig('hero_overlay'));
+    appendToMain(renderTwig('site_footer'));
+
+    // Fire a custom 'twigRendered' event, so that component JS
+    // can run after the components are built.
+    const event = new Event('twigRendered');
+    document.dispatchEvent(event);
+  });
+
+</script>
+</body>
+</html>
