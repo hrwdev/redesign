@@ -6,6 +6,10 @@
   font-weight: bold;
 }
 
+.impact__link .link-emphasis {
+  white-space: normal;
+}
+
 /**
  * Mobile only (carousel)
  */

@@ -25,6 +25,7 @@
 
 .follow__social-links {
   display: flex;
+  flex-wrap: wrap;
   gap: 1em;
   align-items: center;
 }

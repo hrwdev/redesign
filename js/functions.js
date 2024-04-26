@@ -115,3 +115,21 @@ function appendToMain(html) {
 function getRandomStringId() {
   return Math.random().toString(36).substr(2, 9);
 }
+
+
+/**
+ * Debounce utility.
+ * @todo: use Drupal's included debounce library.
+ *
+ * @param callback
+ * @param wait
+ */
+function debounce(callback, wait) {
+  let timeoutId = null;
+  return (...args) => {
+    window.clearTimeout(timeoutId);
+    timeoutId = window.setTimeout(() => {
+      callback.apply(null, args);
+    }, wait);
+  };
+}

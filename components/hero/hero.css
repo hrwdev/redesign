@@ -1,4 +1,4 @@
-.hero {
+.hero-news {
 }
 
 .hero__card {
@@ -64,7 +64,7 @@
  * Mobile only
  */
 @media (max-width: 768px) {
-  .hero {
+  .hero-news {
     padding-inline: var(--gap);
   }
   .hero__image {
@@ -86,7 +86,7 @@
  * Desktop only
  */
 @media (min-width: 768.01px) {
-  .hero {
+  .hero-news {
     position: relative;
     padding-inline: var(--gap);
     display: grid;

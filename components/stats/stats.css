@@ -46,7 +46,7 @@
 
 .stat__description {
   margin-block-start: 0.333em;
-  font-family: var(--font-serif);
+  font-family: var(--font-serif), serif;
 }
 
 /**
@@ -55,8 +55,10 @@
 @container (min-width: 768.01px) {
   .stats {
     display: flex;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+  }
+
+  .stat {
+    flex: 1 1 auto;
   }
 
   .stat:not(:last-child) {
