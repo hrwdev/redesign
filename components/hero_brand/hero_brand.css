@@ -31,15 +31,22 @@
     position: relative;
     z-index: 1;
     padding: var(--gap);
-    background: linear-gradient(to bottom, black 25%, transparent);
-    margin-bottom: -17rem;
-    padding-block-end: 11rem;
   }
   .hero-brand__image {
     position: relative;
     z-index: 0;
   }
 }
+
+/* Attempt to pull the image slightly under the card, for a gradient effect */
+@media (min-width: 520px) and (max-width: 768px) {
+  .hero-brand__card {
+    background: linear-gradient(to bottom, black 25%, transparent);
+    margin-bottom: -17rem;
+    padding-block-end: 11rem;
+  }
+}
+
 /**
  * Desktop only
  */
