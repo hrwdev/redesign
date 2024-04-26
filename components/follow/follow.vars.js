@@ -1,6 +1,6 @@
 vars.follow = {
   default: {
-    title: 'Stay informed',
+    title: 'Stay in the know',
     subscribe_title: 'Get details of our in-depth investigations straight to your inbox',
     subscribe_email_label: 'Your email address',
     subscribe_button_label: 'Subscribe',
