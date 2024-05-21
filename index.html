@@ -13,8 +13,8 @@
   <link rel="stylesheet" href="./fonts/fonts-edited.css" />
 
   <style>
-    .trending + .hero-brand {
-      margin-block-start: calc(var(--gap) * -2);
+    .hero-brand {
+      margin-block-start: var(--gap-neg);
     }
   </style>
 </head>
@@ -29,7 +29,6 @@
 <script>
   document.addEventListener('componentsLoaded', () => {
     appendToMain(renderTwig('site_header'));
-    appendToMain(renderTwig('trending'));
     appendToMain(renderTwig('hero_brand', 'en', {
       video_widget: renderTwig('modal_disclosure')
     }));
@@ -41,6 +40,7 @@
         renderTwig('card_minimal', 'en3'),
       ]
     }));
+    appendToMain(renderTwig('trending'));
     appendToMain(renderTwig('about'));
     appendToMain(renderTwig('spotlight'));
     appendToMain(renderTwig('reports', {

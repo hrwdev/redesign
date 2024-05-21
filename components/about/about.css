@@ -39,13 +39,13 @@
   }
 
   .about__image {
-    grid-column: 9 / 13;
+    grid-column: 8 / 13;
     grid-row: 1;
     line-height: 0;
   }
 
   .about__card {
-    grid-column: 1 / 9;
+    grid-column: 1 / 8;
     grid-row: 1;
     height: fit-content;
   }

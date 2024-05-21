@@ -63,7 +63,7 @@
 /**
  * Mobile only
  */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .hero-news {
     padding-inline: var(--gap);
   }
@@ -85,7 +85,7 @@
 /**
  * Desktop only
  */
-@media (min-width: 768.01px) {
+@media (min-width: 900.01px) {
   .hero-news {
     position: relative;
     padding-inline: var(--gap);
