@@ -1,7 +1,7 @@
 vars.about = {
   default: {
     headline: 'How We Work',
-    image: '<img width="484" height="484" src="https://www.hrw.org/sites/default/files/media_2022/11/202210hr_careers_header_0.jpg" alt="Human rights protest" />',
+    image: '<img width="1400" height="800" src="' + subdir + '/components/about/about_hero.png" alt="FPO image" />',
     body: '<p><strong>Investigate:</strong> Our researchers investigate human rights crimes globally.</p>' +
       '<p><strong>Expose:</strong> We publicize our findings, share stories, and speak out against injustice.</p>' +
       '<p><strong>Change:</strong> Our advocates meet with governments and mobilize the public to change policy, enforce laws, and deliver justice.</p>',
