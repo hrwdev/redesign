@@ -7,7 +7,7 @@
   box-sizing: border-box;
   border-width: 0;
   border-style: solid;
-  border-color: #000;
+  border-color: #444;
 }
 
 .is-keyboard-user :focus {

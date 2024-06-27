@@ -1,6 +1,6 @@
 .modal-disclosure {
   background-color: var(--white);
-  border: 1px solid var(--near-white);
+  border: 1px solid var(--gray);
 }
 .modal-disclosure summary {
   display: flex;
