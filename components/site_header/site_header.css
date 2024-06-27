@@ -1,4 +1,4 @@
-@media (min-width: 768.01px) {
+@media (min-width: 1150.01px) {
   .site-header {
     background: url('./site-header-desktop.png');
     background-size: contain;
@@ -9,12 +9,22 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 640px) and (max-width: 1150px) {
   .site-header {
-    background: url('./site-header-mobile.png');
+    background: url('./header-tablet.png');
     background-size: contain;
     width: 100%;
     margin-inline: auto;
-    aspect-ratio: 375 / 71;
+    aspect-ratio: 2225 / 217;
+  }
+}
+
+@media (max-width: 639.99px) {
+  .site-header {
+    background: url('./header-mobile.png');
+    background-size: contain;
+    width: 100%;
+    margin-inline: auto;
+    aspect-ratio: 1175 / 192;
   }
 }

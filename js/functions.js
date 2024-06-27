@@ -99,6 +99,15 @@ function renderTwig(name, variant = 'default', blocks = {}) {
 }
 
 /**
+ * Insert an HTML string at the end of the first 'header' element.
+ *
+ * @param {string} html
+ */
+function appendToHeader(html) {
+  document.querySelector('header').insertAdjacentHTML('beforeend', html);
+}
+
+/**
  * Insert an HTML string at the end of the 'main' element.
  *
  * @param {string} html

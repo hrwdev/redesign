@@ -11,14 +11,11 @@
   <link rel="stylesheet" href="./css/reset.css" />
   <link rel='stylesheet' href="./css/main.css" />
   <link rel="stylesheet" href="./fonts/fonts-edited.css" />
-
-  <style>
-    .hero-brand {
-      margin-block-start: var(--gap-neg);
-    }
-  </style>
 </head>
 <body>
+<header class="page-header">
+
+</header>
 <main class="util-block-spacing" style="gap: var(--gap2);">
 
 </main>
@@ -28,7 +25,8 @@
 
 <script>
   document.addEventListener('componentsLoaded', () => {
-    appendToMain(renderTwig('site_header'));
+    appendToHeader(renderTwig('site_header'));
+    appendToHeader(renderTwig('trending'));
     appendToMain(renderTwig('hero_brand', 'en', {
       video_widget: renderTwig('modal_disclosure')
     }));
@@ -40,7 +38,6 @@
         renderTwig('card_minimal', 'en3'),
       ]
     }));
-    appendToMain(renderTwig('trending'));
     appendToMain(renderTwig('about'));
     appendToMain(renderTwig('spotlight'));
     appendToMain(renderTwig('reports', {

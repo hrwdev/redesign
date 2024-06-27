@@ -63,7 +63,7 @@ html {
   font-feature-settings: "lnum" 1, "lnum", "lnum";
 }
 
-main {
+main, .page-header {
   max-width: 1440px;
   margin-inline: auto;
 }

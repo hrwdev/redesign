@@ -1,5 +1,5 @@
 .trending {
-  background: var(--blue);
+  background: var(--dark-blue);
   color: var(--white);
   display: flex;
   align-items: center;
