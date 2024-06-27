@@ -1,17 +1,14 @@
 vars.hero = {
   default: {
     variant: "",
-    image: "<img alt='FPO' src='https://www.hrw.org/sites/default/files/styles/embed_xxl/public/media_2024/03/202403lgbt_videothumbnail_mex.jpg' width='2250' height='1264'/>",
+    image: "<img alt='FPO' src='https://www.hrw.org/sites/default/files/media_2024/06/202406us_virginia_felonyconviction_voter.jpg' width='1263' height='700'/>",
     eyebrow: "News Release",
-    date: "April 1, 2024",
-    headline: "Mexico: Guanajuato Should Legally Recognize Trans Identities",
-    body: "<p>Trans people in the Mexican state of Guanajuato suffer economic, medical, and labor discrimination, and other onerous legal impediments because the state has no process for issuing identity documents consistent with their gender. A new documentary follows the stories of two transgender women who have fought to have their gender and names legally recognized in Guanajuato.</p>",
+    date: "June 27, 2024",
+    headline: "US: An Outlier in Denying Voting Rights for Criminal Convictions",
+    body: "<p>The United States is out of step with the rest of the world in disenfranchising large numbers of citizens based on criminal convictions, the Sentencing Project, Human Rights Watch, and the American Civil Liberties Union said in a report released today. In this US election year, and going forward, US states should reform their laws to ensure nobody is denied the right to vote due to a criminal conviction.</p>",
     package: false,
     links: [
-      {url: "#", text: "Read the report"},
-      {url: "#", text: "Watch the video"},
-      {url: "#", text: "Donate"},
-      {url: "#", text: "Sign the petition"},
+      {url: "#", text: "Read the full report: \"Out of Step\""},
     ],
   },
   breaking: {

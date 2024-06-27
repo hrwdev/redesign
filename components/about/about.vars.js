@@ -2,9 +2,9 @@ vars.about = {
   default: {
     headline: 'How We Work',
     image: '<img width="484" height="484" src="https://www.hrw.org/sites/default/files/media_2022/11/202210hr_careers_header_0.jpg" alt="Human rights protest" />',
-    body: '<p><strong>Investigate:</strong> Our researchers investigate wrongdoings globally.</p>' +
-      '<p><strong>Expose:</strong> We publicize our findings and mobilize the public.</p>' +
-      '<p><strong>Change:</strong> Our advocates meet with governments and other groups to change policy, enforce laws, and deliver justice.</p>',
+    body: '<p><strong>Investigate:</strong> Our researchers investigate human rights crimes globally.</p>' +
+      '<p><strong>Expose:</strong> We publicize our findings, share stories, and speak out against injustice.</p>' +
+      '<p><strong>Change:</strong> Our advocates meet with governments and mobilize the public to change policy, enforce laws, and deliver justice.</p>',
     link: {type: 'primary', url: '#', text: "Our Impact"},
   },
   option2: {
