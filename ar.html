@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="./fonts/fonts-edited.css" />
 </head>
 <body>
+<header class="page-header"></header>
 <main class="util-block-spacing">
 
 </main>
@@ -22,7 +23,8 @@
 
 <script>
   document.addEventListener('componentsLoaded', () => {
-    appendToMain(renderTwig('site_header'));
+    appendToHeader(renderTwig('site_header'));
+    appendToHeader(renderTwig('trending', 'ar'));
     appendToMain(renderTwig('hero_brand', 'ar', {
       video_widget: renderTwig('modal_disclosure', 'ar')
     }));
@@ -35,7 +37,6 @@
         renderTwig('card_minimal', 'ar3'),
       ]
     }));
-    appendToMain(renderTwig('trending', 'ar'));
     appendToMain(renderTwig('about', 'ar'));
     appendToMain(renderTwig('spotlight', 'ar', {
       primary: renderTwig('card', 'ar'),
