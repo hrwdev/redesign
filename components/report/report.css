@@ -14,7 +14,7 @@
   padding-block: 25px;
   padding-inline: var(--gap);
   overflow: scroll;
-  background: var(--black);
+  background: #000;
   color: var(--white);
   line-height: 1.2;
   text-decoration: none;
