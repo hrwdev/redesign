@@ -1,7 +1,7 @@
 vars.follow = {
   default: {
     title: 'Stay informed',
-    subscribe_title: 'The world’s top human rights news, explored and explained.',
+    subscribe_title: 'Get updates on human rights and opportunities to take action.',
     subscribe_email_label: 'Your email address',
     subscribe_button_label: 'Subscribe',
     social_title: 'Follow us',
