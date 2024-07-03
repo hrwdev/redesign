@@ -2,9 +2,9 @@ vars.about = {
   default: {
     headline: 'How We Work',
     image: '<img width="1400" height="800" src="' + subdir + '/components/about/about_hero.png" alt="FPO image" />',
-    body: '<p><strong>Investigate:</strong> Our researchers investigate human rights crimes globally.</p>' +
-      '<p><strong>Expose:</strong> We publicize our findings, share stories, and speak out against injustice.</p>' +
-      '<p><strong>Change:</strong> Our advocates meet with governments and mobilize the public to change policy, enforce laws, and deliver justice.</p>',
+    body: '<p><strong>Investigate:</strong> We investigate human rights abuses/violations globally.</p>' +
+      '<p><strong>Expose:</strong> We publish our findings, share the stories of those affected by abuses, and speak out against injustice.</p>' +
+      '<p><strong>Change:</strong> We mobilize the public and pressure guvernments to enforce laws, change policy, and deliver justice.</p>',
     link: {type: 'primary', url: '#', text: "Our Impact"},
   },
   option2: {
