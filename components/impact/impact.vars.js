@@ -1,6 +1,6 @@
 vars.impact = {
   default: {
-    title: '50 Years of Impact',
+    title: 'More than 4 Decades of Impact',
     body: '<p>Together with our partners, we’ve:</p><ul>' +
       '<li>Helped put powerful war criminals behind bars</li>' +
       '<li>Protected children laboring in tobacco fields</li>' +
