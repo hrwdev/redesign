@@ -4,7 +4,7 @@ vars.about = {
     image: '<img width="1400" height="800" src="' + subdir + '/components/about/about_hero.png" alt="FPO image" />',
     body: '<p><strong>Investigate:</strong> We investigate human rights abuses globally.</p>' +
       '<p><strong>Expose:</strong> We publish our findings, share the stories of those affected by abuses, and speak out against injustice.</p>' +
-      '<p><strong>Change:</strong> We mobilize the public and press guvernments to enforce rights-respecting laws, change policy, and deliver justice.</p>',
+      '<p><strong>Change:</strong> We mobilize the public and press governments to enforce rights-respecting laws, change policy, and deliver justice.</p>',
     link: {type: 'primary', url: '#', text: "Our Impact"},
   },
   option2: {
